@@ -1,0 +1,1571 @@
+{
+  "institutionId": "CLOTH001",
+  "schemaVersion": "1.0.0",
+  "template": {
+    "id": "template-women-clothing",
+    "name": "Women Clothing",
+    "version": "1.0.0"
+  },
+  "site": {
+    "name": "Tekkzy Ent",
+    "description": "Heritage Saree Collection",
+    "locale": "en-IN",
+    "favicon": {
+      "src": "/cloth001/vite.svg",
+      "alt": "Tekkzy Ent"
+    },
+    "primaryColor": "#661701",
+    "contact": {
+      "email": "info@tekkzyent.com",
+      "phone": "+91 777 777 7777",
+      "address": "123 Heritage Lane, Bhawanipatna, Odisha"
+    },
+    "contactMail": "info@tekkzyent.com",
+    "api": {
+      "contactEndpoint": "https://tg2d8qq95k.execute-api.us-east-2.amazonaws.com/dev/tekkzy/contact"
+    },
+    "socialLinks": [
+      {
+        "id": "social-instagram",
+        "platform": "instagram",
+        "label": "Instagram",
+        "url": "https://instagram.com/tekkzyent",
+        "target": "_blank"
+      },
+      {
+        "id": "social-facebook",
+        "platform": "facebook",
+        "label": "Facebook",
+        "url": "#",
+        "target": "_blank"
+      },
+      {
+        "id": "social-pinterest",
+        "platform": "pinterest",
+        "label": "Pinterest",
+        "url": "#",
+        "target": "_blank"
+      },
+      {
+        "id": "social-whatsapp",
+        "platform": "whatsapp",
+        "label": "WhatsApp",
+        "url": "#",
+        "target": "_blank"
+      }
+    ]
+  },
+  "navigation": {
+    "id": "main-navigation",
+    "editorLabel": "Navigation",
+    "enabled": true,
+    "variant": "default",
+    "logo": {
+      "mode": "text",
+      "text": "Tekkzy Ent",
+      "subtitle": "Heritage Saree Collection",
+      "image": {
+        "src": "/cloth001/vite.svg",
+        "alt": "Tekkzy Ent",
+        "fit": "contain",
+        "focalPoint": {
+          "x": 50,
+          "y": 50
+        }
+      },
+      "url": "/"
+    },
+    "items": [
+      {
+        "id": "nav-home",
+        "label": "Home",
+        "url": "/",
+        "target": "_self",
+        "children": []
+      },
+      {
+        "id": "nav-about",
+        "label": "About Us",
+        "url": "/about",
+        "target": "_self",
+        "children": []
+      },
+      {
+        "id": "nav-contact",
+        "label": "Contact Us",
+        "url": "/contact",
+        "target": "_self",
+        "children": []
+      }
+    ],
+    "actions": [
+      {
+        "id": "nav-cta-shop",
+        "label": "Shop Collection",
+        "url": "/#categories",
+        "target": "_self",
+        "style": "primary"
+      }
+    ],
+    "settings": {
+      "sticky": true,
+      "showOnMobile": true
+    }
+  },
+  "pages": [
+    {
+      "id": "page-home",
+      "editorLabel": "Home Page",
+      "title": "Home",
+      "slug": "/",
+      "enabled": true,
+      "seo": {
+        "title": "Tekkzy Ent | Heritage Saree Collection",
+        "description": "Explore our curated selection of premium sarees",
+        "image": {
+          "src": "/cloth001/assets/offer-4prlZ9yQ.svg",
+          "alt": "Tekkzy Ent saree collection",
+          "fit": "cover",
+          "focalPoint": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        "noIndex": false
+      },
+      "sections": [
+        {
+          "id": "home-hero",
+          "editorLabel": "Home · Hero (sale banner + 4 arch frames)",
+          "type": "hero",
+          "variant": "arch-frames",
+          "enabled": true,
+          "content": {
+            "eyebrow": "Limited Stock, Limited time. Get Your Perfect Drape",
+            "eyebrowSecond": "Today Before It's Gone",
+            "title": "SALE ON",
+            "titleSecond": "NEW SAREE",
+            "discount": {
+              "text": "UP TO",
+              "percentage": "50%",
+              "suffix": "OFF"
+            },
+            "actions": [
+              {
+                "id": "home-hero-action-explore",
+                "label": "EXPLORE COLLECTION",
+                "url": "/#categories",
+                "target": "_self",
+                "style": "primary",
+                "icon": null
+              }
+            ],
+            "backgroundPattern": {
+              "src": "/cloth001/assets/bg-Dpp5FkAY.png",
+              "alt": "Hero decorative pattern",
+              "fit": "contain",
+              "focalPoint": {
+                "x": 50,
+                "y": 50
+              }
+            },
+            "frames": {
+              "leftLarge": {
+                "src": "/cloth001/assets/leftbig-B1n-yN2t.svg",
+                "alt": "Hero left large frame",
+                "fit": "contain",
+                "focalPoint": {
+                  "x": 50,
+                  "y": 50
+                }
+              },
+              "leftSmall": {
+                "src": "/cloth001/assets/leftsmall-BtzTHZoj.svg",
+                "alt": "Hero left small frame",
+                "fit": "contain",
+                "focalPoint": {
+                  "x": 50,
+                  "y": 50
+                }
+              },
+              "rightLarge": {
+                "src": "/cloth001/assets/Rightbig-dzTBLQxg.svg",
+                "alt": "Hero right large frame",
+                "fit": "contain",
+                "focalPoint": {
+                  "x": 50,
+                  "y": 50
+                }
+              },
+              "rightSmall": {
+                "src": "/cloth001/assets/Rightsmall-CqaEyzfT.svg",
+                "alt": "Hero right small frame",
+                "fit": "contain",
+                "focalPoint": {
+                  "x": 50,
+                  "y": 50
+                }
+              },
+              "backgroundPattern": {
+                "src": "/cloth001/assets/bg-Dpp5FkAY.png",
+                "alt": "Hero decorative pattern",
+                "fit": "contain",
+                "focalPoint": {
+                  "x": 50,
+                  "y": 50
+                }
+              }
+            }
+          },
+          "settings": {
+            "width": "full",
+            "theme": "brand",
+            "backgroundColor": "#661701",
+            "decorativePatterns": true,
+            "paddingTop": "large",
+            "paddingBottom": "large"
+          }
+        },
+        {
+          "id": "home-categories",
+          "editorLabel": "Home · Saree Collections",
+          "type": "category-grid",
+          "variant": "grid",
+          "enabled": true,
+          "content": {
+            "eyebrow": "Shop by Weave",
+            "title": "Our Saree Collections",
+            "description": "Explore our curated selection of premium handloom sarees",
+            "items": [
+              {
+                "id": "category-kanchipuram",
+                "title": "Kanchipuram",
+                "image": {
+                  "src": "/cloth001/assets/category1-DKcccFES.svg",
+                  "alt": "Kanchipuram saree",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "link": {
+                  "label": "Shop Kanchipuram",
+                  "url": "/#favorites",
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "category-banarasi",
+                "title": "Banarasi",
+                "image": {
+                  "src": "/cloth001/assets/category2-BKRxwz1D.svg",
+                  "alt": "Banarasi saree",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "link": {
+                  "label": "Shop Banarasi",
+                  "url": "/#favorites",
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "category-paithani",
+                "title": "Paithani",
+                "image": {
+                  "src": "/cloth001/assets/category3-BLv350_D.svg",
+                  "alt": "Paithani saree",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "link": {
+                  "label": "Shop Paithani",
+                  "url": "/#favorites",
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "category-chanderi",
+                "title": "Chanderi",
+                "image": {
+                  "src": "/cloth001/assets/category4-BzeDaG1Y.svg",
+                  "alt": "Chanderi saree",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "link": {
+                  "label": "Shop Chanderi",
+                  "url": "/#favorites",
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "category-patola",
+                "title": "Patola",
+                "image": {
+                  "src": "/cloth001/assets/category5-DVWVJB-N.svg",
+                  "alt": "Patola saree",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "link": {
+                  "label": "Shop Patola",
+                  "url": "/#favorites",
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "category-sambalpuri",
+                "title": "Sambalpuri",
+                "image": {
+                  "src": "/cloth001/assets/category6-mIEFcfQr.svg",
+                  "alt": "Sambalpuri saree",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "link": {
+                  "label": "Shop Sambalpuri",
+                  "url": "/#favorites",
+                  "target": "_self"
+                }
+              }
+            ],
+            "actions": []
+          },
+          "settings": {
+            "width": "container",
+            "theme": "light",
+            "columns": {
+              "desktop": 3,
+              "tablet": 2,
+              "mobile": 1
+            },
+            "paddingTop": "large",
+            "paddingBottom": "large"
+          }
+        },
+        {
+          "id": "home-favorites",
+          "editorLabel": "Home · Weekly Favorites",
+          "type": "product-grid",
+          "variant": "cards",
+          "enabled": true,
+          "content": {
+            "eyebrow": "Limited Stock, Limited time. Get Your Perfect Drape",
+            "eyebrowSecond": "Today Before It's Gone",
+            "title": "This Week's Favorites",
+            "description": "Handpicked designer sarees trending this week",
+            "viewAllLink": {
+              "label": "View All Sarees →",
+              "url": "/#categories",
+              "target": "_self"
+            },
+            "collection": {
+              "title": "Designer Collection",
+              "description": "Perfect designer sarees for special occasions",
+              "items": [
+                {
+                  "id": "product-temple-maroon-majesty",
+                  "title": "Temple Maroon Majesty",
+                  "price": 18999,
+                  "currency": "INR",
+                  "image": {
+                    "src": "/cloth001/assets/enterprise1-B9Ts4cac.svg",
+                    "alt": "Temple Maroon Majesty saree",
+                    "fit": "cover",
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  "description": "Double ikat Patola silk saree",
+                  "badge": "Trending"
+                },
+                {
+                  "id": "product-contemporary-teal-art",
+                  "title": "Contemporary Teal Art",
+                  "price": 9299,
+                  "currency": "INR",
+                  "image": {
+                    "src": "/cloth001/assets/enterprise2-BdguPypx.svg",
+                    "alt": "Contemporary Teal Art saree",
+                    "fit": "cover",
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  "description": "Handwoven Sambalpuri with tribal motifs",
+                  "badge": null
+                },
+                {
+                  "id": "product-sambalpuri-sunset",
+                  "title": "Sambalpuri Sunset",
+                  "price": 11399,
+                  "currency": "INR",
+                  "image": {
+                    "src": "/cloth001/assets/enterprise3-2cT3_9s6.svg",
+                    "alt": "Sambalpuri Sunset saree",
+                    "fit": "cover",
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  "description": "Pure Mysore silk with zari work",
+                  "badge": null
+                },
+                {
+                  "id": "product-paithani-peacock-glory",
+                  "title": "Paithani Peacock Glory",
+                  "price": 7999,
+                  "currency": "INR",
+                  "image": {
+                    "src": "/cloth001/assets/enterprise4-CAC4pxM5.svg",
+                    "alt": "Paithani Peacock Glory saree",
+                    "fit": "cover",
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  "description": "Natural Tussar silk with hand embroidery",
+                  "badge": "New"
+                },
+                {
+                  "id": "product-midnight-banarasi",
+                  "title": "Midnight Banarasi Bloom",
+                  "price": 15999,
+                  "currency": "INR",
+                  "image": {
+                    "src": "/cloth001/assets/enterprise5-Cikdhku_.svg",
+                    "alt": "Midnight Banarasi Bloom",
+                    "fit": "cover",
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  "description": "Classic Banarasi silk with floral zari jaal",
+                  "badge": "Bestseller"
+                },
+                {
+                  "id": "product-ivory-chanderi-mist",
+                  "title": "Ivory Chanderi Mist",
+                  "price": 6499,
+                  "currency": "INR",
+                  "image": {
+                    "src": "/cloth001/assets/enterprise6-Bui-EfjG.svg",
+                    "alt": "Ivory Chanderi Mist",
+                    "fit": "cover",
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  "description": "Lightweight Chanderi with subtle gold borders",
+                  "badge": null
+                },
+                {
+                  "id": "product-ruby-patola-heritage",
+                  "title": "Ruby Patola Heritage",
+                  "price": 24999,
+                  "currency": "INR",
+                  "image": {
+                    "src": "/cloth001/assets/enterprise7-zc2XsWqc.svg",
+                    "alt": "Ruby Patola Heritage",
+                    "fit": "cover",
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  "description": "Double-ikat Patola in rich ruby tones",
+                  "badge": "Limited"
+                },
+                {
+                  "id": "product-golden-kanjeevaram",
+                  "title": "Golden Kanjeevaram Grace",
+                  "price": 21999,
+                  "currency": "INR",
+                  "image": {
+                    "src": "/cloth001/assets/enterprise8-Q3uXzzTh.svg",
+                    "alt": "Golden Kanjeevaram Grace",
+                    "fit": "cover",
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  "description": "Temple border Kanjeevaram with pure zari",
+                  "badge": null
+                }
+              ]
+            },
+            "actions": []
+          },
+          "settings": {
+            "width": "container",
+            "theme": "light",
+            "columns": {
+              "desktop": 4,
+              "tablet": 2,
+              "mobile": 1
+            },
+            "paddingTop": "large",
+            "paddingBottom": "large"
+          }
+        },
+        {
+          "id": "home-offer-banner",
+          "editorLabel": "Home · Offer Banner",
+          "type": "cta",
+          "variant": "newsletter-banner",
+          "enabled": true,
+          "content": {
+            "eyebrow": "Welcome Offer",
+            "title": "Get 15% Off Your First Order",
+            "description": "Plus exclusive access to new collections and styling tips",
+            "media": {
+              "type": "image",
+              "image": {
+                "src": "/cloth001/assets/offer-4prlZ9yQ.svg",
+                "alt": "Saree offer banner",
+                "fit": "cover",
+                "focalPoint": {
+                  "x": 50,
+                  "y": 50
+                }
+              },
+              "video": null
+            },
+            "newsletterForm": {
+              "emailPlaceholder": "Enter your email",
+              "buttonLabel": "Newsletter"
+            },
+            "privacyText": "We respect your privacy. Unsubscribe anytime.",
+            "socialIcons": [
+              {
+                "id": "offer-social-instagram",
+                "platform": "instagram",
+                "label": "Instagram",
+                "url": "https://instagram.com/tekkzyent"
+              },
+              {
+                "id": "offer-social-facebook",
+                "platform": "facebook",
+                "label": "Facebook",
+                "url": "#"
+              },
+              {
+                "id": "offer-social-pinterest",
+                "platform": "pinterest",
+                "label": "Pinterest",
+                "url": "#"
+              },
+              {
+                "id": "offer-social-whatsapp",
+                "platform": "whatsapp",
+                "label": "WhatsApp",
+                "url": "#"
+              }
+            ],
+            "actions": []
+          },
+          "settings": {
+            "width": "full",
+            "theme": "brand",
+            "backgroundColor": "#5b1805",
+            "textAlign": "left",
+            "paddingTop": "large",
+            "paddingBottom": "large"
+          }
+        },
+        {
+          "id": "home-lookbook",
+          "editorLabel": "Home · Style Lookbook",
+          "type": "gallery",
+          "variant": "lookbook",
+          "enabled": true,
+          "content": {
+            "eyebrow": "Style Guides",
+            "title": "Get The Look",
+            "description": "Outfit formulas styled with our heritage weaves",
+            "items": [
+              {
+                "id": "lookbook-casual-day-look",
+                "title": "Casual Day Look",
+                "details": "Cotton saree • Simple cotton blouse • Minimal silver jewelry • Kolhapuri sandals",
+                "image": {
+                  "src": "/cloth001/assets/offer1-CWOv9pSo.svg",
+                  "alt": "Casual Day Look",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "link": {
+                  "label": "Get This Look →",
+                  "url": "/#favorites",
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "lookbook-office-elegance",
+                "title": "Office Elegance",
+                "details": "Silk saree • Tailored blouse • Pearl studs • Sleek undo • Classic pumps",
+                "image": {
+                  "src": "/cloth001/assets/offer2-CaAdyjiP.svg",
+                  "alt": "Office Elegance",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "link": {
+                  "label": "Get This Look →",
+                  "url": "/#favorites",
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "lookbook-evening-glamour",
+                "title": "Evening Glamour",
+                "details": "Premium silk saree • Embellished blouse • Statement necklace • Strappy heels",
+                "image": {
+                  "src": "/cloth001/assets/offer3-BcIJQhEk.svg",
+                  "alt": "Evening Glamour",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "link": {
+                  "label": "Get This Look →",
+                  "url": "/#favorites",
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "lookbook-festival-ready",
+                "title": "Festival Ready",
+                "details": "Bold print saree • Traditional blouse • Oxidized jewelry • Fresh flower bun • Juttis",
+                "image": {
+                  "src": "/cloth001/assets/offer4-tUSy_dQp.svg",
+                  "alt": "Festival Ready",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "link": {
+                  "label": "Get This Look →",
+                  "url": "/#favorites",
+                  "target": "_self"
+                }
+              }
+            ],
+            "actions": []
+          },
+          "settings": {
+            "width": "container",
+            "theme": "light",
+            "columns": {
+              "desktop": 4,
+              "tablet": 2,
+              "mobile": 1
+            },
+            "paddingTop": "large",
+            "paddingBottom": "large"
+          }
+        },
+        {
+          "id": "home-testimonials",
+          "editorLabel": "Home · Testimonials & Instagram",
+          "type": "testimonials",
+          "variant": "cards-with-instagram",
+          "enabled": true,
+          "content": {
+            "eyebrow": "Limited Stock, Limited time. Get Your Perfect Drape",
+            "eyebrowSecond": "Today Before It's Gone",
+            "title": "Know From Customers",
+            "description": "Discover why our customers love our heritage collection and service",
+            "items": [
+              {
+                "id": "testimonial-priya-sharma",
+                "quote": "The quality of the silk exceeded my expectations. The silk is pure and luxurious, the weaving is impeccable, and the colors are even more vibrant in person. I wore it to my cousin's wedding and received countless compliments. Worth every rupee!",
+                "reviewTitle": "Absolutely Stunning Quality!",
+                "rating": 5,
+                "purchased": "Royal Purple Kanchipuram",
+                "timeAgo": "2 weeks ago",
+                "verified": true,
+                "author": {
+                  "name": "Priya Sharma",
+                  "role": "Heritage Fashion Lover",
+                  "location": "London, UK",
+                  "image": {
+                    "src": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&q=80",
+                    "alt": "Priya Sharma",
+                    "fit": "cover",
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  }
+                }
+              },
+              {
+                "id": "testimonial-anjali-mehta",
+                "quote": "As a mother of the bride, I wanted something elegant yet comfortable for the long ceremonies. This teal silk was perfect! The contemporary design is modern but still respectful of tradition. The draping stayed in place all day, and I felt confident and beautiful.",
+                "reviewTitle": "Perfect for My Daughter's Wedding",
+                "rating": 5,
+                "purchased": "Teal Contemporary Silk",
+                "timeAgo": "1 week ago",
+                "verified": true,
+                "author": {
+                  "name": "Anjali Mehta",
+                  "role": "Fashion Designer",
+                  "location": "Mumbai, India",
+                  "image": {
+                    "src": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&q=80",
+                    "alt": "Anjali Mehta",
+                    "fit": "cover",
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  }
+                }
+              },
+              {
+                "id": "testimonial-meera-desai",
+                "quote": "The saree is beautiful and the quality is excellent. The only reason for 4 stars instead of 5 is that the coral color is slightly darker than shown in the website photos - more of a burnt orange. Still gorgeous and I'm happy with my purchase, but just something to be aware of.",
+                "reviewTitle": "Lovely Saree, Slightly Darker Than Photo",
+                "rating": 4,
+                "purchased": "Coral Kanjeevaram",
+                "timeAgo": "3 weeks ago",
+                "verified": true,
+                "author": {
+                  "name": "Meera Desai",
+                  "role": "Business Owner",
+                  "location": "Bangalore, India",
+                  "image": {
+                    "src": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=500&q=80",
+                    "alt": "Meera Desai",
+                    "fit": "cover",
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  }
+                }
+              }
+            ],
+            "instagram": {
+              "title": "Share Your Style with #MonsoonFloralsVASTRA",
+              "hashtag": "#MonsoonFloralsVASTRA",
+              "followAction": {
+                "id": "testimonials-instagram-follow",
+                "label": "Follow @TekkzyEnt",
+                "url": "https://instagram.com/tekkzyent",
+                "target": "_blank",
+                "style": "primary",
+                "icon": "instagram"
+              },
+              "images": [
+                {
+                  "id": "instagram-image-1",
+                  "image": {
+                    "src": "/cloth001/assets/style1-B6xPIsD5.svg",
+                    "alt": "Instagram style post 1",
+                    "fit": "cover",
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  }
+                },
+                {
+                  "id": "instagram-image-2",
+                  "image": {
+                    "src": "/cloth001/assets/style2-0jqVHzKf.svg",
+                    "alt": "Instagram style post 2",
+                    "fit": "cover",
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  }
+                },
+                {
+                  "id": "instagram-image-3",
+                  "image": {
+                    "src": "/cloth001/assets/style3-DzhVc19r.svg",
+                    "alt": "Instagram style post 3",
+                    "fit": "cover",
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  }
+                },
+                {
+                  "id": "instagram-image-4",
+                  "image": {
+                    "src": "/cloth001/assets/style4-CJR2czOC.svg",
+                    "alt": "Instagram style post 4",
+                    "fit": "cover",
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  }
+                },
+                {
+                  "id": "instagram-image-5",
+                  "image": {
+                    "src": "/cloth001/assets/style5-CAU9eigL.svg",
+                    "alt": "Instagram style post 5",
+                    "fit": "cover",
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  }
+                },
+                {
+                  "id": "instagram-image-6",
+                  "image": {
+                    "src": "/cloth001/assets/style6-B7NOB4YL.svg",
+                    "alt": "Instagram style post 6",
+                    "fit": "cover",
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  }
+                },
+                {
+                  "id": "instagram-image-7",
+                  "image": {
+                    "src": "/cloth001/assets/style7-CHfSbYlV.svg",
+                    "alt": "Instagram style post 7",
+                    "fit": "cover",
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  }
+                },
+                {
+                  "id": "instagram-image-8",
+                  "image": {
+                    "src": "/cloth001/assets/style8-DPd7Cnh8.svg",
+                    "alt": "Instagram style post 8",
+                    "fit": "cover",
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "settings": {
+            "width": "container",
+            "theme": "light",
+            "autoPlay": false,
+            "paddingTop": "large",
+            "paddingBottom": "large"
+          }
+        }
+      ]
+    },
+    {
+      "id": "page-about",
+      "editorLabel": "About Page",
+      "title": "About Us",
+      "slug": "/about",
+      "enabled": true,
+      "seo": {
+        "title": "About Us | Tekkzy Ent",
+        "description": "Every thread tells a story, every saree celebrates tradition",
+        "image": {
+          "src": "/cloth001/assets/about-B_1xWspE.svg",
+          "alt": "About Tekkzy Ent",
+          "fit": "cover",
+          "focalPoint": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        "noIndex": false
+      },
+      "sections": [
+        {
+          "id": "about-header",
+          "editorLabel": "About · Header",
+          "type": "hero",
+          "variant": "page-header",
+          "enabled": true,
+          "content": {
+            "eyebrow": "EST. 2019",
+            "title": "Weaving Dreams,\nPreserving Heritage",
+            "subtitle": "Every thread tells a story, every saree celebrates tradition",
+            "description": "Celebrating India's handloom legacy with authentic artisan partnerships.",
+            "media": {
+              "type": "image",
+              "image": {
+                "src": "/cloth001/assets/about-B_1xWspE.svg",
+                "alt": "Weaving heritage banner",
+                "fit": "cover",
+                "focalPoint": {
+                  "x": 50,
+                  "y": 50
+                }
+              },
+              "video": null
+            },
+            "actions": []
+          },
+          "settings": {
+            "width": "full",
+            "theme": "brand",
+            "primaryColor": "#92400E",
+            "textAlign": "center",
+            "paddingTop": "large",
+            "paddingBottom": "large"
+          }
+        },
+        {
+          "id": "about-story",
+          "editorLabel": "About · Our Story",
+          "type": "content",
+          "variant": "image-right",
+          "enabled": true,
+          "content": {
+            "eyebrow": "Our Story",
+            "title": "Crafted with Purpose",
+            "subtitle": "From loom to wardrobe — preserving living textile traditions",
+            "body": [
+              {
+                "id": "about-story-paragraph-1",
+                "type": "paragraph",
+                "text": "Rasika was born from a simple belief: that every woman deserves to experience the timeless elegance of authentic handloom sarees, and every artisan deserves recognition for their craft."
+              },
+              {
+                "id": "about-story-paragraph-2",
+                "type": "paragraph",
+                "text": "Founded in 2019 by textile enthusiast Priya Sharma, Rasika emerged from countless journeys across India's weaving heartlands – from the silk looms of Kanchipuram to the brocade ateliers of Varanasi. What started as a personal quest to preserve vanishing weaving traditions has blossomed into a movement celebrating India's rich textile heritage."
+              },
+              {
+                "id": "about-story-paragraph-3",
+                "type": "paragraph",
+                "text": "Today, we partner with over 150 master weavers across eight states, bringing their exceptional craftsmanship to discerning women who value authenticity, quality, and cultural legacy. Each saree in our collection is hand-selected, representing months of artisan labor and centuries of inherited wisdom."
+              }
+            ],
+            "media": {
+              "type": "image",
+              "image": {
+                "src": "/cloth001/assets/know-DXMmfind.svg",
+                "alt": "Artisan weaving story",
+                "fit": "cover",
+                "focalPoint": {
+                  "x": 50,
+                  "y": 50
+                }
+              },
+              "video": null
+            },
+            "actions": []
+          },
+          "settings": {
+            "width": "container",
+            "theme": "light",
+            "textAlign": "left",
+            "mediaPosition": "right",
+            "paddingTop": "large",
+            "paddingBottom": "large"
+          }
+        },
+        {
+          "id": "about-stats",
+          "editorLabel": "About · Stats",
+          "type": "stats",
+          "variant": "row",
+          "enabled": true,
+          "content": {
+            "eyebrow": "By The Numbers",
+            "title": "Heritage in Motion",
+            "description": "A growing family of weavers, weaves, and wardrobe moments",
+            "items": [
+              {
+                "id": "about-stat-artisans",
+                "value": "150+",
+                "label": "Master Artisans"
+              },
+              {
+                "id": "about-stat-states",
+                "value": "8",
+                "label": "Heritage States"
+              },
+              {
+                "id": "about-stat-sarees",
+                "value": "2,400+",
+                "label": "Sarees Curated"
+              },
+              {
+                "id": "about-stat-stores",
+                "value": "5",
+                "label": "Store Locations"
+              }
+            ]
+          },
+          "settings": {
+            "width": "container",
+            "theme": "muted",
+            "columns": {
+              "desktop": 4,
+              "tablet": 2,
+              "mobile": 2
+            },
+            "paddingTop": "medium",
+            "paddingBottom": "medium"
+          }
+        },
+        {
+          "id": "about-journey",
+          "editorLabel": "About · Weaving Journey",
+          "type": "process",
+          "variant": "steps-with-images",
+          "enabled": true,
+          "content": {
+            "eyebrow": "The Process",
+            "title": "From Thread to Heirloom",
+            "description": "Six careful stages bring every saree from silk farm to your celebration",
+            "items": [
+              {
+                "id": "journey-step-01",
+                "step": "01",
+                "title": "Silk Selection",
+                "description": "Pure mulberry silk sourced from ethical farms",
+                "image": {
+                  "src": "/cloth001/assets/selection-CQp7xjZB.svg",
+                  "alt": "Silk Selection",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                }
+              },
+              {
+                "id": "journey-step-02",
+                "step": "02",
+                "title": "Natural Dyeing",
+                "description": "Traditional plant-based dyes creating rich colors",
+                "image": {
+                  "src": "/cloth001/assets/dyeing-B2Ij3m33.svg",
+                  "alt": "Natural Dyeing",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                }
+              },
+              {
+                "id": "journey-step-03",
+                "step": "03",
+                "title": "Thread Arrangement",
+                "description": "Precise setup of thousands of threads",
+                "image": {
+                  "src": "/cloth001/assets/arrangement-GbUe41_a.svg",
+                  "alt": "Thread Arrangement",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                }
+              },
+              {
+                "id": "journey-step-04",
+                "step": "04",
+                "title": "Master Weaving",
+                "description": "Intricate patterns created one thread at a time",
+                "image": {
+                  "src": "/cloth001/assets/weaving-Bi0W0A69.svg",
+                  "alt": "Master Weaving",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                }
+              },
+              {
+                "id": "journey-step-05",
+                "step": "05",
+                "title": "Zari Integration",
+                "description": "Precious metal threads woven into borders",
+                "image": {
+                  "src": "/cloth001/assets/integration-DXcg4fmt.svg",
+                  "alt": "Zari Integration",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                }
+              },
+              {
+                "id": "journey-step-06",
+                "step": "06",
+                "title": "Quality Check",
+                "description": "Rigorous inspection ensuring flawless perfection",
+                "image": {
+                  "src": "/cloth001/assets/check-B9L7tiwn.svg",
+                  "alt": "Quality Check",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                }
+              }
+            ],
+            "actions": []
+          },
+          "settings": {
+            "width": "container",
+            "theme": "light",
+            "columns": {
+              "desktop": 3,
+              "tablet": 2,
+              "mobile": 1
+            },
+            "paddingTop": "large",
+            "paddingBottom": "large"
+          }
+        }
+      ]
+    },
+    {
+      "id": "page-contact",
+      "editorLabel": "Contact Page",
+      "title": "Contact Us",
+      "slug": "/contact",
+      "enabled": true,
+      "seo": {
+        "title": "Contact Us | Tekkzy Ent",
+        "description": "Get in touch with us for any questions or concerns",
+        "image": {
+          "src": "/cloth001/assets/know-DXMmfind.svg",
+          "alt": "Contact Tekkzy Ent",
+          "fit": "cover",
+          "focalPoint": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        "noIndex": false
+      },
+      "sections": [
+        {
+          "id": "contact-header",
+          "editorLabel": "Contact · Header",
+          "type": "hero",
+          "variant": "page-header",
+          "enabled": true,
+          "content": {
+            "eyebrow": "We're Here",
+            "title": "Contact Us",
+            "subtitle": "Styling advice, order help, or store visits — say hello",
+            "description": "Get in touch with us for any questions or concerns",
+            "media": {
+              "type": "image",
+              "image": {
+                "src": "/cloth001/assets/about-B_1xWspE.svg",
+                "alt": "Contact banner",
+                "fit": "cover",
+                "focalPoint": {
+                  "x": 50,
+                  "y": 50
+                }
+              },
+              "video": null
+            },
+            "actions": []
+          },
+          "settings": {
+            "width": "container",
+            "theme": "light",
+            "textAlign": "center",
+            "paddingTop": "large",
+            "paddingBottom": "small"
+          }
+        },
+        {
+          "id": "contact-form",
+          "editorLabel": "Contact · Form",
+          "type": "form",
+          "variant": "contact",
+          "enabled": true,
+          "content": {
+            "eyebrow": "Write to Us",
+            "title": "Send a Message",
+            "description": "Share your occasion, preferred weave, or any question — we reply within one business day.",
+            "fields": [
+              {
+                "id": "contact-field-name",
+                "name": "name",
+                "label": "Name",
+                "type": "text",
+                "placeholder": "Your name",
+                "required": true,
+                "options": []
+              },
+              {
+                "id": "contact-field-email",
+                "name": "email",
+                "label": "Email",
+                "type": "email",
+                "placeholder": "your.email@example.com",
+                "required": true,
+                "options": []
+              },
+              {
+                "id": "contact-field-subject",
+                "name": "subject",
+                "label": "Subject",
+                "type": "text",
+                "placeholder": "How can we help?",
+                "required": true,
+                "options": []
+              },
+              {
+                "id": "contact-field-message",
+                "name": "message",
+                "label": "Message",
+                "type": "textarea",
+                "placeholder": "Your message...",
+                "required": true,
+                "options": []
+              }
+            ],
+            "submitAction": {
+              "label": "Send Message",
+              "formName": "Cloth Contact Us",
+              "successMessage": "Thank you! Your message has been sent.",
+              "errorMessage": "Something went wrong. Please try again."
+            }
+          },
+          "settings": {
+            "width": "narrow",
+            "theme": "light",
+            "paddingTop": "medium",
+            "paddingBottom": "medium"
+          }
+        },
+        {
+          "id": "contact-info",
+          "editorLabel": "Contact · Information",
+          "type": "contact-info",
+          "variant": "cards",
+          "enabled": true,
+          "content": {
+            "eyebrow": "Reach Us",
+            "title": "Contact Details",
+            "description": "Prefer a call or visit? Use the details below.",
+            "items": [
+              {
+                "id": "contact-info-email",
+                "title": "Email",
+                "icon": "HiOutlineMail",
+                "lines": [
+                  "info@tekkzyent.com",
+                  "support@tekkzyent.com"
+                ]
+              },
+              {
+                "id": "contact-info-phone",
+                "title": "Phone",
+                "icon": "HiOutlinePhone",
+                "lines": [
+                  "+91 777 777 7777",
+                  "+91 0999 999 9999"
+                ]
+              },
+              {
+                "id": "contact-info-location",
+                "title": "Location",
+                "icon": "HiOutlineLocationMarker",
+                "lines": [
+                  "123 Heritage Lane",
+                  "Bhawanipatna, Odisha"
+                ]
+              }
+            ]
+          },
+          "settings": {
+            "width": "container",
+            "theme": "light",
+            "columns": {
+              "desktop": 3,
+              "tablet": 3,
+              "mobile": 1
+            },
+            "paddingTop": "medium",
+            "paddingBottom": "medium"
+          }
+        },
+        {
+          "id": "contact-hours",
+          "editorLabel": "Contact · Business Hours",
+          "type": "hours",
+          "variant": "list",
+          "enabled": true,
+          "content": {
+            "eyebrow": "When We're Open",
+            "title": "Business Hours",
+            "description": "Store and support hours in India Standard Time",
+            "items": [
+              {
+                "id": "hours-weekdays",
+                "days": "Monday - Friday",
+                "hours": "9:00 AM - 6:00 PM"
+              },
+              {
+                "id": "hours-saturday",
+                "days": "Saturday",
+                "hours": "10:00 AM - 4:00 PM"
+              },
+              {
+                "id": "hours-sunday",
+                "days": "Sunday",
+                "hours": "Closed"
+              }
+            ]
+          },
+          "settings": {
+            "width": "narrow",
+            "theme": "light",
+            "paddingTop": "medium",
+            "paddingBottom": "large"
+          }
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "id": "main-footer",
+    "editorLabel": "Footer",
+    "enabled": true,
+    "variant": "columns",
+    "logo": {
+      "mode": "text",
+      "text": "Tekkzy Ent",
+      "image": {
+        "src": "/cloth001/vite.svg",
+        "alt": "Tekkzy Ent",
+        "fit": "contain",
+        "focalPoint": {
+          "x": 50,
+          "y": 50
+        }
+      },
+      "url": "/"
+    },
+    "description": "Handcrafted with ♥ in India",
+    "columns": [
+      {
+        "id": "footer-collections",
+        "title": "Collections",
+        "links": [
+          {
+            "id": "footer-collections-kanchipuram",
+            "label": "Kanchipuram",
+            "url": "#",
+            "target": "_self"
+          },
+          {
+            "id": "footer-collections-banarasi",
+            "label": "Banarasi",
+            "url": "#",
+            "target": "_self"
+          },
+          {
+            "id": "footer-collections-paithani",
+            "label": "Paithani",
+            "url": "#",
+            "target": "_self"
+          },
+          {
+            "id": "footer-collections-chanderi",
+            "label": "Chanderi",
+            "url": "#",
+            "target": "_self"
+          },
+          {
+            "id": "footer-collections-patola",
+            "label": "Patola",
+            "url": "#",
+            "target": "_self"
+          },
+          {
+            "id": "footer-collections-sambalpuri",
+            "label": "Sambalpuri",
+            "url": "#",
+            "target": "_self"
+          },
+          {
+            "id": "footer-collections-wedding",
+            "label": "Wedding",
+            "url": "#",
+            "target": "_self"
+          },
+          {
+            "id": "footer-collections-festival",
+            "label": "Festival",
+            "url": "#",
+            "target": "_self"
+          },
+          {
+            "id": "footer-collections-view-all",
+            "label": "View All",
+            "url": "#",
+            "target": "_self"
+          }
+        ]
+      },
+      {
+        "id": "footer-support",
+        "title": "Support",
+        "phone": "+91 98765 43210",
+        "links": [
+          {
+            "id": "footer-support-store-locations",
+            "label": "Store Locations",
+            "url": "#",
+            "target": "_self"
+          },
+          {
+            "id": "footer-support-contact-us",
+            "label": "Contact Us",
+            "url": "#",
+            "target": "_self"
+          },
+          {
+            "id": "footer-support-faqs",
+            "label": "FAQs",
+            "url": "#",
+            "target": "_self"
+          }
+        ]
+      },
+      {
+        "id": "footer-explore",
+        "title": "Explore",
+        "links": [
+          {
+            "id": "footer-explore-about",
+            "label": "About Us",
+            "url": "/about",
+            "target": "_self"
+          }
+        ]
+      }
+    ],
+    "visit": {
+      "hours": [
+        {
+          "id": "footer-visit-hours-weekdays",
+          "days": "Mon-Sat",
+          "hours": "10:00 AM - 8:00 PM"
+        },
+        {
+          "id": "footer-visit-hours-sunday",
+          "days": "Sunday",
+          "hours": "11:00 AM - 6:00 PM"
+        }
+      ],
+      "cities": [
+        "Mumbai",
+        "Delhi",
+        "Bangalore",
+        "Hyderabad",
+        "Pune"
+      ],
+      "cta": {
+        "id": "footer-visit-cta",
+        "label": "FIND NEAREST STORE",
+        "url": "#",
+        "target": "_self",
+        "style": "primary",
+        "icon": null
+      }
+    },
+    "newsletter": {
+      "enabled": true,
+      "title": "Stay in the Loop",
+      "description": "New weaves, styling tips, and member-only offers",
+      "emailPlaceholder": "Enter your email",
+      "buttonLabel": "Subscribe"
+    },
+    "socialLinks": [
+      {
+        "id": "footer-instagram",
+        "platform": "instagram",
+        "label": "Instagram",
+        "url": "https://instagram.com/tekkzyent",
+        "target": "_blank"
+      }
+    ],
+    "legalLinks": [
+      {
+        "id": "footer-privacy",
+        "label": "Privacy Policy",
+        "url": "#",
+        "target": "_self"
+      },
+      {
+        "id": "footer-terms",
+        "label": "Terms",
+        "url": "#",
+        "target": "_self"
+      },
+      {
+        "id": "footer-cookies",
+        "label": "Cookies",
+        "url": "#",
+        "target": "_self"
+      }
+    ],
+    "copyright": "© 2026 Tekkzy Ent. All rights reserved.",
+    "settings": {
+      "theme": "dark"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.solar-gradient {
+  background: radial-gradient(
+    circle at bottom,
+    #7e22ce,
+    #4338ca 35%,
+    #000000 100%
+  );
+}

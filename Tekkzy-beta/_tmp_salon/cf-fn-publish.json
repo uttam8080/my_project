@@ -1,0 +1,16 @@
+﻿{
+    "FunctionSummary": {
+        "Name": "spa-subfolder-router",
+        "Status": "IN_PROGRESS",
+        "FunctionConfig": {
+            "Comment": "Routes SPA refresh to subfolder index; multipage (salon1) keeps nested routes.",
+            "Runtime": "cloudfront-js-2.0"
+        },
+        "FunctionMetadata": {
+            "FunctionARN": "arn:aws:cloudfront::922184331501:function/spa-subfolder-router",
+            "Stage": "LIVE",
+            "CreatedTime": "2026-07-19T04:02:25.178Z",
+            "LastModifiedTime": "2026-07-29T10:48:37.237Z"
+        }
+    }
+}

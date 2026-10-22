@@ -1,0 +1,124 @@
+name: Deploy (beta/prod)
+
+on:
+  push:
+    branches:
+      - beta
+      - prod
+
+env:
+  NODE_VERSION: "20"
+
+  BETA_AWS_REGION: us-east-2
+  PROD_AWS_REGION: us-east-1
+  BETA_S3_BUCKET: beta.tekkzy.com
+  PROD_S3_BUCKET: tekkzy.com
+  BETA_CF_DISTRIBUTION_ID: E36BLI83214IY6
+  PROD_CF_DISTRIBUTION_ID: E21YVACM73J5DF
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Select stage and deploy target
+        id: target
+        run: |
+          BRANCH="${GITHUB_REF_NAME}"
+          echo "Branch=${BRANCH}"
+
+          if [[ "${BRANCH}" == "beta" ]]; then
+            echo "app_stage=beta" >> "$GITHUB_OUTPUT"
+            echo "vite_mode=beta" >> "$GITHUB_OUTPUT"
+            echo "s3_bucket=${BETA_S3_BUCKET}" >> "$GITHUB_OUTPUT"
+            echo "cf_distribution_id=${BETA_CF_DISTRIBUTION_ID}" >> "$GITHUB_OUTPUT"
+            echo "aws_region=${BETA_AWS_REGION}" >> "$GITHUB_OUTPUT"
+          elif [[ "${BRANCH}" == "prod" ]]; then
+            echo "app_stage=prod" >> "$GITHUB_OUTPUT"
+            echo "vite_mode=production" >> "$GITHUB_OUTPUT"
+            echo "s3_bucket=${PROD_S3_BUCKET}" >> "$GITHUB_OUTPUT"
+            echo "cf_distribution_id=${PROD_CF_DISTRIBUTION_ID}" >> "$GITHUB_OUTPUT"
+            echo "aws_region=${PROD_AWS_REGION}" >> "$GITHUB_OUTPUT"
+          else
+            echo "Unsupported branch ${BRANCH}"
+            exit 1
+          fi
+
+      - name: Guard against wrong bucket
+        run: |
+          STAGE="${{ steps.target.outputs.app_stage }}"
+          BUCKET="${{ steps.target.outputs.s3_bucket }}"
+          MODE="${{ steps.target.outputs.vite_mode }}"
+
+          echo "Deploying stage=${STAGE} mode=${MODE} bucket=${BUCKET}"
+
+          if [[ "${STAGE}" == "prod" && "${BUCKET}" != "${PROD_S3_BUCKET}" ]]; then
+            echo "Refusing prod deploy to non-prod bucket: ${BUCKET}"
+            exit 1
+          fi
+          if [[ "${STAGE}" == "beta" && "${BUCKET}" != "${BETA_S3_BUCKET}" ]]; then
+            echo "Refusing beta deploy to non-beta bucket: ${BUCKET}"
+            exit 1
+          fi
+          if [[ "${STAGE}" == "prod" && "${MODE}" != "production" ]]; then
+            echo "Refusing prod deploy with vite mode=${MODE}"
+            exit 1
+          fi
+          if [[ "${STAGE}" == "beta" && "${MODE}" != "beta" ]]; then
+            echo "Refusing beta deploy with vite mode=${MODE}"
+            exit 1
+          fi
+          if [[ ! -f ".env.${MODE}" && ! ( "${MODE}" == "production" && -f ".env.production" ) ]]; then
+            # production mode loads .env.production; beta loads .env.beta
+            if [[ "${MODE}" == "beta" && ! -f ".env.beta" ]]; then
+              echo "Missing .env.beta in repo"
+              exit 1
+            fi
+            if [[ "${MODE}" == "production" && ! -f ".env.production" ]]; then
+              echo "Missing .env.production in repo"
+              exit 1
+            fi
+          fi
+
+      # Env comes from committed .env.beta / .env.production (vite --mode).
+      - name: Build (stage=${{ steps.target.outputs.app_stage }})
+        run: npm run build -- --mode ${{ steps.target.outputs.vite_mode }}
+        env:
+          NODE_OPTIONS: --max-old-space-size=8192
+          CI: false
+
+      - name: Verify build output
+        run: |
+          if [ ! -d "dist" ]; then
+            echo "dist folder not found"
+            ls -la
+            exit 1
+          fi
+          echo "Built with mode=${{ steps.target.outputs.vite_mode }} stage=${{ steps.target.outputs.app_stage }}"
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ steps.target.outputs.aws_region }}
+
+      - name: Deploy to S3 (${{ steps.target.outputs.s3_bucket }})
+        run: |
+          echo "Syncing dist → s3://${{ steps.target.outputs.s3_bucket }}"
+          aws s3 sync ./dist s3://${{ steps.target.outputs.s3_bucket }} --delete --exact-timestamps
+
+      - name: CloudFront invalidation
+        run: aws cloudfront create-invalidation --distribution-id ${{ steps.target.outputs.cf_distribution_id }} --paths "/*"

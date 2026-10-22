@@ -1,0 +1,1598 @@
+{
+  "institutionId": "CLOTH002",
+  "schemaVersion": "1.0.0",
+  "template": {
+    "id": "template-men-clothing",
+    "name": "Men Clothing",
+    "version": "1.0.0",
+    "theme": {
+      "primaryColor": "#FF5722"
+    }
+  },
+  "site": {
+    "name": "Tekkzy Wear",
+    "description": "Premium menswear fashion that inspires.",
+    "locale": "en-IN",
+    "loadingText": "Loading...",
+    "favicon": null,
+    "contact": {
+      "email": "hello@tekkzywear.in",
+      "phone": "+91 98765 42310",
+      "address": "123 Design Avenue, San Francisco, CA 94102"
+    },
+    "contactMail": "hello@tekkzywear.in",
+    "api": {
+      "contactEndpoint": null
+    },
+    "socialLinks": [
+      {
+        "id": "social-instagram",
+        "platform": "instagram",
+        "label": "Instagram",
+        "url": "https://instagram.com",
+        "target": "_blank"
+      },
+      {
+        "id": "social-facebook",
+        "platform": "facebook",
+        "label": "Facebook",
+        "url": "https://facebook.com",
+        "target": "_blank"
+      },
+      {
+        "id": "social-twitter",
+        "platform": "twitter",
+        "label": "Twitter",
+        "url": "https://twitter.com",
+        "target": "_blank"
+      }
+    ]
+  },
+  "navigation": {
+    "id": "main-navigation",
+    "editorLabel": "Navigation",
+    "enabled": true,
+    "variant": "default",
+    "logo": {
+      "mode": "text",
+      "text": "TEKKZY WEAR",
+      "image": null,
+      "url": "/"
+    },
+    "items": [
+      {
+        "id": "nav-home",
+        "label": "HOME",
+        "url": "/",
+        "target": "_self",
+        "children": [],
+        "sourceType": "page"
+      },
+      {
+        "id": "nav-about",
+        "label": "ABOUT US",
+        "url": "/about",
+        "target": "_self",
+        "children": [],
+        "sourceType": "page"
+      },
+      {
+        "id": "nav-contact",
+        "label": "CONTACT US",
+        "url": "/contact",
+        "target": "_self",
+        "children": [],
+        "sourceType": "page"
+      }
+    ],
+    "actions": [
+      {
+        "id": "nav-cta-shop",
+        "label": "SHOP COLLECTION",
+        "url": "/#products",
+        "target": "_self",
+        "style": "primary"
+      }
+    ],
+    "settings": {
+      "sticky": true,
+      "showOnMobile": true
+    }
+  },
+  "pages": [
+    {
+      "id": "page-home",
+      "editorLabel": "Home Page",
+      "title": "Home",
+      "slug": "/",
+      "enabled": true,
+      "sections": [
+        {
+          "id": "home-hero",
+          "editorLabel": "Home · Hero",
+          "type": "hero",
+          "variant": "stacked-headline",
+          "enabled": true,
+          "content": {
+            "headingLines": [
+              "BOLD",
+              "DEFINED",
+              "UNSTOPPABLE"
+            ],
+            "subtitle": "Premium menswear for the modern warrior",
+            "media": {
+              "type": "image",
+              "image": {
+                "src": "https://institution-utils.s3.us-east-1.amazonaws.com/images/1785835892034_hero.jpg",
+                "alt": "Hero Background",
+                "fit": "cover",
+                "focalPoint": {
+                  "x": 50,
+                  "y": 50
+                }
+              },
+              "video": null
+            },
+            "actions": [
+              {
+                "id": "home-hero-action-shop",
+                "label": "SHOP COLLECTION",
+                "url": "/#products",
+                "target": "_self",
+                "style": "primary",
+                "icon": null
+              },
+              {
+                "id": "home-hero-action-story",
+                "label": "OUR STORY",
+                "url": "/about",
+                "target": "_self",
+                "style": "secondary",
+                "icon": null
+              }
+            ],
+            "stats": [
+              {
+                "id": "home-hero-stat-1",
+                "value": "2,500+ PRODUCTS",
+                "label": "Curated Collection"
+              },
+              {
+                "id": "home-hero-stat-2",
+                "value": "100% AUTHENTIC",
+                "label": "Premium Quality"
+              },
+              {
+                "id": "home-hero-stat-3",
+                "value": "FREE SHIPPING",
+                "label": "Orders Over ₹2,999"
+              }
+            ]
+          },
+          "settings": {
+            "width": "full",
+            "theme": "light",
+            "paddingTop": "large",
+            "paddingBottom": "large"
+          }
+        },
+        {
+          "id": "home-products",
+          "editorLabel": "Home · Products",
+          "type": "product-grid",
+          "variant": "cards",
+          "enabled": true,
+          "content": {
+            "eyebrow": "SHOP",
+            "title": "FEATURED PRODUCTS",
+            "description": "Handpicked styles for every mood",
+            "items": [
+              {
+                "id": "home-product-rebel-bomber",
+                "title": "REBEL BOMBER",
+                "subtitle": "Jackets • Regular Fit",
+                "price": "3,499",
+                "mrp": "4,999",
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=500&q=80",
+                  "alt": "REBEL BOMBER",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "colors": [
+                  "#6B7280",
+                  "#1F2937",
+                  "#10B981",
+                  "#059669",
+                  "#DC2626"
+                ],
+                "sizes": "S • XXL Available"
+              },
+              {
+                "id": "home-product-coastal-linen-1",
+                "title": "COASTAL LINEN",
+                "subtitle": "Shirts • Slim Fit",
+                "price": "2,799",
+                "mrp": "",
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=500&q=80",
+                  "alt": "COASTAL LINEN",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "colors": [
+                  "#E5E7EB",
+                  "#3B82F6",
+                  "#F97316",
+                  "#EF4444",
+                  "#06B6D4"
+                ],
+                "sizes": "S • M Available"
+              },
+              {
+                "id": "home-product-sunset-overshirt",
+                "title": "SUNSET OVERSHIRT",
+                "subtitle": "Shirts • Relaxed Fit",
+                "price": "2,299",
+                "mrp": "",
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=500&q=80",
+                  "alt": "SUNSET OVERSHIRT",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "colors": [
+                  "#DC2626",
+                  "#7C3AED",
+                  "#1F2937",
+                  "#F3F4F6",
+                  "#F59E0B"
+                ],
+                "sizes": "S • XXL Available"
+              },
+              {
+                "id": "home-product-classic-pocket-tee",
+                "title": "CLASSIC POCKET TEE",
+                "subtitle": "T-Shirts • Regular Fit",
+                "price": "899",
+                "mrp": "1,299",
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&q=80",
+                  "alt": "CLASSIC POCKET TEE",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "colors": [
+                  "#1F2937",
+                  "#4B5563",
+                  "#6B7280",
+                  "#DC2626",
+                  "#F97316"
+                ],
+                "sizes": "XS • XXL Available"
+              },
+              {
+                "id": "home-product-coastal-linen-2",
+                "title": "COASTAL LINEN",
+                "subtitle": "Shirts • Slim Fit",
+                "price": "2,799",
+                "mrp": "",
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1620012253295-c15cc3e65df4?w=500&q=80",
+                  "alt": "COASTAL LINEN",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "colors": [
+                  "#1F2937",
+                  "#6B7280",
+                  "#10B981",
+                  "#3B82F6",
+                  "#06B6D4"
+                ],
+                "sizes": "S • XL Available"
+              }
+            ],
+            "actions": []
+          },
+          "settings": {
+            "width": "container",
+            "theme": "light",
+            "columns": {
+              "desktop": 4,
+              "tablet": 2,
+              "mobile": 1
+            },
+            "paddingTop": "large",
+            "paddingBottom": "large"
+          }
+        },
+        {
+          "id": "home-variety",
+          "editorLabel": "Home · Color Variety",
+          "type": "category-grid",
+          "variant": "color-swatches",
+          "enabled": true,
+          "content": {
+            "eyebrow": "GET VARIETY",
+            "title": "CHOOSE YOUR COLOR",
+            "description": "Every shade for every mood",
+            "items": [
+              {
+                "id": "home-color-black",
+                "name": "BLACK",
+                "hex": "#1a1a1a",
+                "itemCount": 254,
+                "textColor": "white",
+                "link": {
+                  "label": "BLACK",
+                  "url": "/shop?color=black",
+                  "target": "_self"
+                },
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?w=500&q=80",
+                  "alt": "BLACK",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                }
+              },
+              {
+                "id": "home-color-white",
+                "name": "WHITE",
+                "hex": "#ffffff",
+                "itemCount": 202,
+                "textColor": "dark",
+                "link": {
+                  "label": "WHITE",
+                  "url": "/shop?color=white",
+                  "target": "_self"
+                },
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=500&q=80",
+                  "alt": "WHITE",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                }
+              },
+              {
+                "id": "home-color-gray",
+                "name": "GRAY",
+                "hex": "#808080",
+                "itemCount": 186,
+                "textColor": "white",
+                "link": {
+                  "label": "GRAY",
+                  "url": "/shop?color=gray",
+                  "target": "_self"
+                },
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1490114538077-0a7f8cb49891?w=500&q=80",
+                  "alt": "GRAY",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                }
+              },
+              {
+                "id": "home-color-navy",
+                "name": "NAVY",
+                "hex": "#1e3a8a",
+                "itemCount": 165,
+                "textColor": "white",
+                "link": {
+                  "label": "NAVY",
+                  "url": "/shop?color=navy",
+                  "target": "_self"
+                },
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1506152983158-b4a74a01c721?w=500&q=80",
+                  "alt": "NAVY",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                }
+              },
+              {
+                "id": "home-color-charcoal",
+                "name": "CHARCOAL",
+                "hex": "#2d2d2d",
+                "itemCount": 189,
+                "textColor": "white",
+                "link": {
+                  "label": "CHARCOAL",
+                  "url": "/shop?color=charcoal",
+                  "target": "_self"
+                },
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=500&q=80",
+                  "alt": "CHARCOAL",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                }
+              },
+              {
+                "id": "home-color-cream",
+                "name": "CREAM",
+                "hex": "#f5f5dc",
+                "itemCount": 150,
+                "textColor": "dark",
+                "link": {
+                  "label": "CREAM",
+                  "url": "/shop?color=cream",
+                  "target": "_self"
+                },
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=500&q=80",
+                  "alt": "CREAM",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                }
+              },
+              {
+                "id": "home-color-red",
+                "name": "RED",
+                "hex": "#dc2626",
+                "itemCount": 143,
+                "textColor": "white",
+                "link": {
+                  "label": "RED",
+                  "url": "/shop?color=red",
+                  "target": "_self"
+                },
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1504593811423-6dd665756598?w=500&q=80",
+                  "alt": "RED",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                }
+              },
+              {
+                "id": "home-color-orange",
+                "name": "ORANGE",
+                "hex": "#ea580c",
+                "itemCount": 128,
+                "textColor": "white",
+                "link": {
+                  "label": "ORANGE",
+                  "url": "/shop?color=orange",
+                  "target": "_self"
+                },
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=500&q=80",
+                  "alt": "ORANGE",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                }
+              },
+              {
+                "id": "home-color-yellow",
+                "name": "YELLOW",
+                "hex": "#eab308",
+                "itemCount": 98,
+                "textColor": "dark",
+                "link": {
+                  "label": "YELLOW",
+                  "url": "/shop?color=yellow",
+                  "target": "_self"
+                },
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1509631179647-0177331693ae?w=500&q=80",
+                  "alt": "YELLOW",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                }
+              },
+              {
+                "id": "home-color-green",
+                "name": "GREEN",
+                "hex": "#16a34a",
+                "itemCount": 134,
+                "textColor": "white",
+                "link": {
+                  "label": "GREEN",
+                  "url": "/shop?color=green",
+                  "target": "_self"
+                },
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=500&q=80",
+                  "alt": "GREEN",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                }
+              },
+              {
+                "id": "home-color-blue",
+                "name": "BLUE",
+                "hex": "#2563eb",
+                "itemCount": 187,
+                "textColor": "white",
+                "link": {
+                  "label": "BLUE",
+                  "url": "/shop?color=blue",
+                  "target": "_self"
+                },
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1492447216082-4726bf04d1d1?w=500&q=80",
+                  "alt": "BLUE",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                }
+              },
+              {
+                "id": "home-color-purple",
+                "name": "PURPLE",
+                "hex": "#9333ea",
+                "itemCount": 121,
+                "textColor": "white",
+                "link": {
+                  "label": "PURPLE",
+                  "url": "/shop?color=purple",
+                  "target": "_self"
+                },
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1502764613149-7f1d229e2307?w=500&q=80",
+                  "alt": "PURPLE",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                }
+              },
+              {
+                "id": "home-color-burgundy",
+                "name": "BURGUNDY",
+                "hex": "#881337",
+                "itemCount": 112,
+                "textColor": "white",
+                "link": {
+                  "label": "BURGUNDY",
+                  "url": "/shop?color=burgundy",
+                  "target": "_self"
+                },
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1519764622345-23439dd774f7?w=500&q=80",
+                  "alt": "BURGUNDY",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                }
+              },
+              {
+                "id": "home-color-olive",
+                "name": "OLIVE",
+                "hex": "#84cc16",
+                "itemCount": 95,
+                "textColor": "white",
+                "link": {
+                  "label": "OLIVE",
+                  "url": "/shop?color=olive",
+                  "target": "_self"
+                },
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?w=500&q=80",
+                  "alt": "OLIVE",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                }
+              },
+              {
+                "id": "home-color-teal",
+                "name": "TEAL",
+                "hex": "#14b8a6",
+                "itemCount": 142,
+                "textColor": "white",
+                "link": {
+                  "label": "TEAL",
+                  "url": "/shop?color=teal",
+                  "target": "_self"
+                },
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=500&q=80",
+                  "alt": "TEAL",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                }
+              },
+              {
+                "id": "home-color-brown",
+                "name": "BROWN",
+                "hex": "#78350f",
+                "itemCount": 167,
+                "textColor": "white",
+                "link": {
+                  "label": "BROWN",
+                  "url": "/shop?color=brown",
+                  "target": "_self"
+                },
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?w=500&q=80",
+                  "alt": "BROWN",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                }
+              },
+              {
+                "id": "home-color-tan",
+                "name": "TAN",
+                "hex": "#a8a29e",
+                "itemCount": 103,
+                "textColor": "white",
+                "link": {
+                  "label": "TAN",
+                  "url": "/shop?color=tan",
+                  "target": "_self"
+                },
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=500&q=80",
+                  "alt": "TAN",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                }
+              },
+              {
+                "id": "home-color-khaki",
+                "name": "KHAKI",
+                "hex": "#a3a380",
+                "itemCount": 88,
+                "textColor": "white",
+                "link": {
+                  "label": "KHAKI",
+                  "url": "/shop?color=khaki",
+                  "target": "_self"
+                },
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=500&q=80",
+                  "alt": "KHAKI",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                }
+              },
+              {
+                "id": "home-color-maroon",
+                "name": "MAROON",
+                "hex": "#991b1b",
+                "itemCount": 76,
+                "textColor": "white",
+                "link": {
+                  "label": "MAROON",
+                  "url": "/shop?color=maroon",
+                  "target": "_self"
+                },
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1524502397800-2eeaad7c3fe5?w=500&q=80",
+                  "alt": "MAROON",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                }
+              },
+              {
+                "id": "home-color-forest",
+                "name": "FOREST",
+                "hex": "#166534",
+                "itemCount": 91,
+                "textColor": "white",
+                "link": {
+                  "label": "FOREST",
+                  "url": "/shop?color=forest",
+                  "target": "_self"
+                },
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1495366691023-cc4eadcc2d7e?w=500&q=80",
+                  "alt": "FOREST",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                }
+              },
+              {
+                "id": "home-color-steel",
+                "name": "STEEL",
+                "hex": "#475569",
+                "itemCount": 124,
+                "textColor": "white",
+                "link": {
+                  "label": "STEEL",
+                  "url": "/shop?color=steel",
+                  "target": "_self"
+                },
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&q=80",
+                  "alt": "STEEL",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                }
+              },
+              {
+                "id": "home-color-rust",
+                "name": "RUST",
+                "hex": "#c2410c",
+                "itemCount": 82,
+                "textColor": "white",
+                "link": {
+                  "label": "RUST",
+                  "url": "/shop?color=rust",
+                  "target": "_self"
+                },
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1463453091185-61582044d556?w=500&q=80",
+                  "alt": "RUST",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                }
+              },
+              {
+                "id": "home-color-sage",
+                "name": "SAGE",
+                "hex": "#a3a380",
+                "itemCount": 97,
+                "textColor": "white",
+                "link": {
+                  "label": "SAGE",
+                  "url": "/shop?color=sage",
+                  "target": "_self"
+                },
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=500&q=80",
+                  "alt": "SAGE",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                }
+              },
+              {
+                "id": "home-color-indigo",
+                "name": "INDIGO",
+                "hex": "#4338ca",
+                "itemCount": 109,
+                "textColor": "white",
+                "link": {
+                  "label": "INDIGO",
+                  "url": "/shop?color=indigo",
+                  "target": "_self"
+                },
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?w=500&q=80",
+                  "alt": "INDIGO",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                }
+              }
+            ],
+            "actions": []
+          },
+          "settings": {
+            "width": "container",
+            "theme": "light",
+            "columns": {
+              "desktop": 6,
+              "tablet": 3,
+              "mobile": 2
+            },
+            "paddingTop": "large",
+            "paddingBottom": "large"
+          }
+        },
+        {
+          "id": "home-monarch-style",
+          "editorLabel": "Home · Style Gallery",
+          "type": "gallery",
+          "variant": "masonry",
+          "enabled": true,
+          "content": {
+            "eyebrow": "#MONARCHSTYLE",
+            "title": "REAL MEN, REAL STYLE",
+            "description": "Join 75K+ men who trust Monarch",
+            "items": [
+              {
+                "id": "home-gallery-image-1",
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&q=80",
+                  "alt": "Man in black jacket",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "size": "large",
+                "caption": null,
+                "link": null
+              },
+              {
+                "id": "home-gallery-image-2",
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&q=80",
+                  "alt": "Man in blue denim shirt",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "size": "medium",
+                "caption": null,
+                "link": null
+              },
+              {
+                "id": "home-gallery-image-3",
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?w=500&q=80",
+                  "alt": "Man skateboarding",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "size": "large",
+                "caption": null,
+                "link": null
+              },
+              {
+                "id": "home-gallery-image-4",
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=500&q=80",
+                  "alt": "Man in black hoodie",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "size": "medium",
+                "caption": null,
+                "link": null
+              },
+              {
+                "id": "home-gallery-image-5",
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&q=80",
+                  "alt": "Man in white shirt at beach",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "size": "large",
+                "caption": null,
+                "link": null
+              },
+              {
+                "id": "home-gallery-image-6",
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?w=500&q=80",
+                  "alt": "Man in formal suit",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "size": "medium",
+                "caption": null,
+                "link": null
+              },
+              {
+                "id": "home-gallery-image-7",
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&q=80",
+                  "alt": "Man laughing",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "size": "medium",
+                "caption": null,
+                "link": null
+              },
+              {
+                "id": "home-gallery-image-8",
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?w=500&q=80",
+                  "alt": "Man in graphic tee",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "size": "medium",
+                "caption": null,
+                "link": null
+              },
+              {
+                "id": "home-gallery-image-9",
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1490114538077-0a7f8cb49891?w=500&q=80",
+                  "alt": "Man at beach in white",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "size": "large",
+                "caption": null,
+                "link": null
+              },
+              {
+                "id": "home-gallery-image-10",
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1542178243-bc20204b769f?w=500&q=80",
+                  "alt": "Man in black hoodie walking",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "size": "medium",
+                "caption": null,
+                "link": null
+              }
+            ],
+            "actions": [
+              {
+                "id": "home-gallery-action-share",
+                "label": "SHARE YOUR LOOK",
+                "url": "/share",
+                "target": "_self",
+                "style": "primary",
+                "icon": null
+              }
+            ]
+          },
+          "settings": {
+            "width": "container",
+            "theme": "light",
+            "paddingTop": "large",
+            "paddingBottom": "large"
+          }
+        },
+        {
+          "id": "home-offer",
+          "editorLabel": "Home · Newsletter Offer",
+          "type": "newsletter",
+          "variant": "banner",
+          "enabled": true,
+          "content": {
+            "eyebrow": "JOIN THE CREW",
+            "title": "GET 20% OFF",
+            "description": "Sign up for exclusive drops, style tips, and first access to sales",
+            "emailPlaceholder": "Enter your email",
+            "buttonLabel": "NEWSLETTER",
+            "disclaimer": "No spam, unsubscribe anytime • We respect your privacy"
+          },
+          "settings": {
+            "width": "container",
+            "theme": "brand",
+            "textAlign": "center",
+            "paddingTop": "large",
+            "paddingBottom": "large"
+          }
+        },
+        {
+          "id": "home-faq",
+          "editorLabel": "Home · FAQ",
+          "type": "faq",
+          "variant": "accordion",
+          "enabled": true,
+          "content": {
+            "eyebrow": "SUPPORT",
+            "title": "Frequently Asked Questions",
+            "description": "Everything you need to know about shopping with us",
+            "items": [
+              {
+                "id": "home-faq-1",
+                "question": "Where is Tekkzy Wear?",
+                "answer": "Tekkzy Wear is a premier fashion brand offering curated collections of high-quality menswear. While we operate globally, our headquarters is based in India. You can find us online at our official website and through our authorized retail partners across multiple countries."
+              },
+              {
+                "id": "home-faq-2",
+                "question": "What is our mission?",
+                "answer": "Our mission at Tekkzy Wear is to provide exceptional quality menswear that combines style, comfort, and durability. We believe in creating timeless pieces that empower men to express their individuality while maintaining authentic fashion standards. We're committed to sustainable manufacturing and fair trade practices."
+              },
+              {
+                "id": "home-faq-3",
+                "question": "What Tekkzy Wear provide?",
+                "answer": "Tekkzy Wear offers an extensive range of premium menswear including jackets, shirts, t-shirts, and accessories. Each piece is carefully designed with attention to detail and crafted from high-quality materials. We provide expert styling advice, free shipping on select orders, and a hassle-free return policy to ensure complete customer satisfaction."
+              },
+              {
+                "id": "home-faq-4",
+                "question": "I Want to BUY ONLINE. How can I connect?",
+                "answer": "You can shop our complete collection directly on our website tekkzywear.com or through our mobile app. Browse our categories, read detailed product descriptions, and enjoy secure checkout. For assistance, reach out to our customer support team at support@tekkzywear.com or call our helpline. We offer fast shipping and easy returns within 30 days."
+              }
+            ],
+            "contactCTA": {
+              "text": "Still have questions? We're here to help!",
+              "action": {
+                "id": "home-faq-contact-action",
+                "label": "Contact Us",
+                "url": "/contact",
+                "target": "_self",
+                "style": "primary",
+                "icon": null
+              }
+            }
+          },
+          "settings": {
+            "width": "narrow",
+            "theme": "light",
+            "allowMultipleOpen": false,
+            "paddingTop": "large",
+            "paddingBottom": "large"
+          }
+        },
+        {
+          "id": "home-visit-us",
+          "editorLabel": "Home · Visit Us",
+          "type": "cta",
+          "variant": "image-banner",
+          "enabled": true,
+          "content": {
+            "eyebrow": "Visit Us",
+            "titleLines": [
+              "Experience",
+              "In Store"
+            ],
+            "description": "Personal styling • Expert advice • Perfect fit",
+            "media": {
+              "type": "image",
+              "image": {
+                "src": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=1600&q=80",
+                "alt": "Store interior with jackets on racks",
+                "fit": "cover",
+                "focalPoint": {
+                  "x": 50,
+                  "y": 50
+                }
+              },
+              "video": null
+            },
+            "actions": [
+              {
+                "id": "home-visit-us-action",
+                "label": "Find a Store",
+                "url": "/find-store",
+                "target": "_self",
+                "style": "primary",
+                "icon": null
+              }
+            ]
+          },
+          "settings": {
+            "width": "full",
+            "theme": "brand",
+            "backgroundColor": "#ff5a2f",
+            "paddingTop": "large",
+            "paddingBottom": "large"
+          }
+        }
+      ]
+    },
+    {
+      "id": "page-about",
+      "editorLabel": "About Page",
+      "title": "About",
+      "slug": "/about",
+      "enabled": true,
+      "sections": [
+        {
+          "id": "about-hero",
+          "editorLabel": "About · Hero",
+          "type": "hero",
+          "variant": "background-image",
+          "enabled": true,
+          "content": {
+            "eyebrow": null,
+            "title": "At Tekkzy Wear",
+            "subtitle": "Building quality fashion since 2020",
+            "media": {
+              "type": "image",
+              "image": {
+                "src": "https://institution-utils.s3.us-east-1.amazonaws.com/images/1785835892034_hero.jpg",
+                "alt": "At Tekkzy Wear hero background",
+                "fit": "cover",
+                "focalPoint": {
+                  "x": 50,
+                  "y": 50
+                }
+              },
+              "video": null
+            },
+            "actions": []
+          },
+          "settings": {
+            "width": "full",
+            "theme": "dark",
+            "textAlign": "center",
+            "paddingTop": "large",
+            "paddingBottom": "large"
+          }
+        },
+        {
+          "id": "about-story",
+          "editorLabel": "About · Our Story",
+          "type": "content",
+          "variant": "image-right",
+          "enabled": true,
+          "content": {
+            "eyebrow": "KNOW",
+            "title": "OUR STORY",
+            "subtitle": null,
+            "body": [
+              {
+                "id": "about-story-paragraph-1",
+                "type": "paragraph",
+                "text": "Tekkzy Wear was founded with a simple vision: to create menswear that truly inspires confidence. What started as a small studio has grown into a trusted brand serving thousands of customers who want sharp, comfortable, everyday style."
+              },
+              {
+                "id": "about-story-paragraph-2",
+                "type": "paragraph",
+                "text": "Over the years, we've expanded beyond basics into jackets, shirts, tees, and accessories — always with the same care for fabric quality, fit, and honest pricing."
+              },
+              {
+                "id": "about-story-paragraph-3",
+                "type": "paragraph",
+                "text": "Today Tekkzy Wear stands for passion, dedication, and craftsmanship. Every drop is designed to help you look bold, defined, and unstoppable."
+              }
+            ],
+            "media": {
+              "type": "image",
+              "image": {
+                "src": "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&q=80",
+                "alt": "Our story",
+                "fit": "cover",
+                "focalPoint": {
+                  "x": 50,
+                  "y": 50
+                }
+              },
+              "video": null
+            },
+            "actions": []
+          },
+          "settings": {
+            "width": "container",
+            "theme": "light",
+            "textAlign": "left",
+            "mediaPosition": "right",
+            "paddingTop": "large",
+            "paddingBottom": "large"
+          }
+        },
+        {
+          "id": "about-drives",
+          "editorLabel": "About · What Drives Us",
+          "type": "feature-grid",
+          "variant": "icon-cards",
+          "enabled": true,
+          "content": {
+            "eyebrow": "WHAT",
+            "title": "DRIVES US",
+            "description": null,
+            "items": [
+              {
+                "id": "about-drive-1",
+                "title": "Quality Craftsmanship",
+                "description": "Every piece is built to last, combining modern cuts with durable fabrics. We refuse to compromise on quality.",
+                "icon": "check",
+                "image": null,
+                "link": null
+              },
+              {
+                "id": "about-drive-2",
+                "title": "Bold Design",
+                "description": "From rebel bombers to coastal linen, every drop is designed for confidence — bold looks without trying too hard.",
+                "icon": "star",
+                "image": null,
+                "link": null
+              },
+              {
+                "id": "about-drive-3",
+                "title": "Customer First",
+                "description": "Your vision is our mission. We listen carefully, communicate clearly, and work to exceed expectations.",
+                "icon": "plus",
+                "image": null,
+                "link": null
+              },
+              {
+                "id": "about-drive-4",
+                "title": "Sustainable Practices",
+                "description": "We're committed to better sourcing and mindful production processes that protect our planet.",
+                "icon": "user",
+                "image": null,
+                "link": null
+              }
+            ],
+            "actions": []
+          },
+          "settings": {
+            "width": "container",
+            "theme": "light",
+            "textAlign": "left",
+            "columns": {
+              "desktop": 2,
+              "tablet": 2,
+              "mobile": 1
+            },
+            "paddingTop": "large",
+            "paddingBottom": "large"
+          }
+        }
+      ]
+    },
+    {
+      "id": "page-contact",
+      "editorLabel": "Contact Page",
+      "title": "Contact",
+      "slug": "/contact",
+      "enabled": true,
+      "sections": [
+        {
+          "id": "contact-form",
+          "editorLabel": "Contact · Form",
+          "type": "form",
+          "variant": "contact",
+          "enabled": true,
+          "content": {
+            "eyebrow": null,
+            "title": "Contact Us",
+            "description": "Get in touch with us for any questions or concerns",
+            "fields": [
+              {
+                "id": "contact-field-name",
+                "name": "name",
+                "label": "Name",
+                "type": "text",
+                "placeholder": "Your name",
+                "required": true,
+                "options": []
+              },
+              {
+                "id": "contact-field-email",
+                "name": "email",
+                "label": "Email",
+                "type": "email",
+                "placeholder": "your.email@example.com",
+                "required": true,
+                "options": []
+              },
+              {
+                "id": "contact-field-subject",
+                "name": "subject",
+                "label": "Subject",
+                "type": "text",
+                "placeholder": "How can we help?",
+                "required": true,
+                "options": []
+              },
+              {
+                "id": "contact-field-message",
+                "name": "message",
+                "label": "Message",
+                "type": "textarea",
+                "placeholder": "Your message...",
+                "required": true,
+                "options": []
+              }
+            ],
+            "submitAction": {
+              "label": "Send Message",
+              "successMessage": "Thanks! We'll get back to you soon.",
+              "errorMessage": "Something went wrong. Please try again."
+            }
+          },
+          "settings": {
+            "width": "narrow",
+            "theme": "light",
+            "paddingTop": "large",
+            "paddingBottom": "large"
+          }
+        },
+        {
+          "id": "contact-info",
+          "editorLabel": "Contact · Info",
+          "type": "contact-info",
+          "variant": "cards",
+          "enabled": true,
+          "content": {
+            "eyebrow": null,
+            "title": "Get in Touch",
+            "description": null,
+            "items": [
+              {
+                "id": "contact-info-phone",
+                "icon": "HiOutlinePhone",
+                "title": "Call Us",
+                "lines": [
+                  "+91 98765 42310",
+                  "Mon-Fri: 9:00 AM - 6:00 PM",
+                  "Sat: 10:00 AM - 4:00 PM"
+                ],
+                "link": null
+              },
+              {
+                "id": "contact-info-email",
+                "icon": "HiOutlineMail",
+                "title": "Email",
+                "lines": [
+                  "hello@tekkzywear.in",
+                  "For urgent matters"
+                ],
+                "link": null
+              },
+              {
+                "id": "contact-info-location",
+                "icon": "HiOutlineLocationMarker",
+                "title": "Visit Our Showroom",
+                "lines": [
+                  "123 Design Avenue",
+                  "San Francisco, CA 94102"
+                ],
+                "link": {
+                  "label": "Get Directions →",
+                  "url": "https://maps.google.com/?q=123+Design+Avenue+San+Francisco",
+                  "target": "_blank"
+                }
+              }
+            ],
+            "actions": []
+          },
+          "settings": {
+            "width": "container",
+            "theme": "light",
+            "columns": {
+              "desktop": 3,
+              "tablet": 2,
+              "mobile": 1
+            },
+            "paddingTop": "large",
+            "paddingBottom": "large"
+          }
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "id": "main-footer",
+    "editorLabel": "Footer",
+    "enabled": true,
+    "variant": "columns",
+    "logo": {
+      "mode": "text",
+      "text": "Tekkzy Wear",
+      "image": {
+        "src": "/images/bean.png",
+        "alt": "Tekkzy Wear logo",
+        "fit": "cover",
+        "focalPoint": {
+          "x": 50,
+          "y": 50
+        }
+      },
+      "url": "/"
+    },
+    "description": "Premium menswear fashion that inspires.",
+    "contact": {
+      "phone": "+91 98765 42310",
+      "email": "hello@tekkzywear.in",
+      "address": "123 Design Avenue, San Francisco, CA 94102"
+    },
+    "contactItems": [
+      "+91 98765 42310",
+      "hello@tekkzywear.in"
+    ],
+    "columns": [
+      {
+        "id": "footer-shop",
+        "title": "SHOP",
+        "links": [
+          {
+            "id": "footer-shop-all-products",
+            "label": "All Products",
+            "url": "/shop",
+            "target": "_self"
+          },
+          {
+            "id": "footer-shop-jackets",
+            "label": "Jackets",
+            "url": "/shop?category=jackets",
+            "target": "_self"
+          },
+          {
+            "id": "footer-shop-shirts",
+            "label": "Shirts",
+            "url": "/shop?category=shirts",
+            "target": "_self"
+          },
+          {
+            "id": "footer-shop-tshirts",
+            "label": "T-Shirts",
+            "url": "/shop?category=tshirts",
+            "target": "_self"
+          },
+          {
+            "id": "footer-shop-accessories",
+            "label": "Accessories",
+            "url": "/shop?category=accessories",
+            "target": "_self"
+          },
+          {
+            "id": "footer-shop-sale",
+            "label": "Sale",
+            "url": "/shop?filter=sale",
+            "target": "_self"
+          }
+        ]
+      },
+      {
+        "id": "footer-help",
+        "title": "HELP",
+        "links": [
+          {
+            "id": "footer-help-shipping",
+            "label": "Shipping Info",
+            "url": "/shipping",
+            "target": "_self"
+          },
+          {
+            "id": "footer-help-returns",
+            "label": "Returns",
+            "url": "/returns",
+            "target": "_self"
+          },
+          {
+            "id": "footer-help-size-guide",
+            "label": "Size Guide",
+            "url": "/size-guide",
+            "target": "_self"
+          },
+          {
+            "id": "footer-help-contact",
+            "label": "Contact",
+            "url": "/contact",
+            "target": "_self"
+          },
+          {
+            "id": "footer-help-faqs",
+            "label": "FAQs",
+            "url": "/#faq",
+            "target": "_self"
+          }
+        ]
+      }
+    ],
+    "newsletter": null,
+    "socialLinks": [
+      {
+        "id": "footer-instagram",
+        "platform": "instagram",
+        "label": "Instagram",
+        "url": "https://instagram.com",
+        "target": "_blank"
+      },
+      {
+        "id": "footer-facebook",
+        "platform": "facebook",
+        "label": "Facebook",
+        "url": "https://facebook.com",
+        "target": "_blank"
+      },
+      {
+        "id": "footer-twitter",
+        "platform": "twitter",
+        "label": "Twitter",
+        "url": "https://twitter.com",
+        "target": "_blank"
+      }
+    ],
+    "legalLinks": [
+      {
+        "id": "footer-legal-privacy",
+        "label": "Privacy",
+        "url": "/privacy",
+        "target": "_self"
+      },
+      {
+        "id": "footer-legal-terms",
+        "label": "Terms",
+        "url": "/terms",
+        "target": "_self"
+      },
+      {
+        "id": "footer-legal-cookies",
+        "label": "Cookies",
+        "url": "/cookies",
+        "target": "_self"
+      }
+    ],
+    "copyright": "© 2026 Tekkzy Wear. All rights reserved.",
+    "settings": {
+      "theme": "dark"
+    }
+  }
+}

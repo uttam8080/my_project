@@ -1,0 +1,579 @@
+{
+  "institutionId": "SALON001",
+  "schemaVersion": "1.0.0",
+  "template": {
+    "id": "template-salon",
+    "name": "barbershop",
+    "version": "1.0.0"
+  },
+  "site": {
+    "name": "barbershop",
+    "description": "Premium barbering since 2010.",
+    "locale": null,
+    "favicon": null,
+    "contact": {
+      "email": "info@barbershop.com",
+      "phone": "(555) 123-4567",
+      "address": "123 Main Street"
+    },
+    "socialLinks": [
+      {
+        "id": "site-social-instagram",
+        "platform": "instagram",
+        "label": "Instagram",
+        "url": "#",
+        "target": "_self"
+      },
+      {
+        "id": "site-social-facebook",
+        "platform": "facebook",
+        "label": "Facebook",
+        "url": "#",
+        "target": "_self"
+      },
+      {
+        "id": "site-social-twitter",
+        "platform": "twitter",
+        "label": "Twitter",
+        "url": "#",
+        "target": "_self"
+      }
+    ]
+  },
+  "navigation": {
+    "id": "main-navigation",
+    "editorLabel": "Navigation",
+    "enabled": true,
+    "variant": "default",
+    "logo": {
+      "mode": "text",
+      "text": "barbershop",
+      "image": null,
+      "url": "/"
+    },
+    "items": [
+      {
+        "id": "nav-home",
+        "label": "HOME",
+        "url": "/",
+        "target": "_self",
+        "children": [],
+        "sourceType": "link"
+      },
+      {
+        "id": "nav-services",
+        "label": "SERVICES",
+        "url": "#services",
+        "target": "_self",
+        "children": [],
+        "sourceType": "anchor"
+      },
+      {
+        "id": "nav-gallery",
+        "label": "GALLERY",
+        "url": "#gallery",
+        "target": "_self",
+        "children": [],
+        "sourceType": "anchor"
+      },
+      {
+        "id": "nav-about",
+        "label": "ABOUT",
+        "url": "#about",
+        "target": "_self",
+        "children": [],
+        "sourceType": "anchor"
+      },
+      {
+        "id": "nav-contact",
+        "label": "CONTACT",
+        "url": "/contact",
+        "target": "_self",
+        "children": [],
+        "sourceType": "link"
+      }
+    ],
+    "actions": [
+      {
+        "id": "nav-book-now-action",
+        "label": "BOOK NOW",
+        "url": null,
+        "target": "_self",
+        "style": "primary",
+        "icon": null
+      }
+    ],
+    "settings": {}
+  },
+  "pages": [
+    {
+      "id": "page-home",
+      "editorLabel": "Home Page",
+      "title": "HOME",
+      "slug": "/",
+      "enabled": true,
+      "sections": [
+        {
+          "id": "home-hero",
+          "editorLabel": "Section 1 - Hero",
+          "type": "hero",
+          "variant": "background-image",
+          "enabled": true,
+          "content": {
+            "tagline": "ESTABLISHED 2012",
+            "titleLines": [
+              "PRECISION",
+              "CUTS.",
+              "TIMELESS",
+              "STYLE."
+            ],
+            "description": "Experience the pinnacle of grooming where tradition meets modern technique. Your signature look starts in our chair.",
+            "backgroundImage": {
+              "src": "/hero-barber.jpg",
+              "alt": null
+            },
+            "actions": [
+              {
+                "id": "home-hero-book-appointment-action",
+                "label": "BOOK APPOINTMENT",
+                "url": null,
+                "target": "_self",
+                "style": "primary",
+                "icon": null
+              },
+              {
+                "id": "home-hero-view-services-action",
+                "label": "VIEW SERVICES",
+                "url": null,
+                "target": "_self",
+                "style": "secondary",
+                "icon": null
+              }
+            ]
+          },
+          "settings": {}
+        },
+        {
+          "id": "home-services",
+          "editorLabel": "Section 2 - Services",
+          "type": "services",
+          "variant": "grid",
+          "enabled": true,
+          "content": {
+            "sectionLabel": "EXPERTISE",
+            "sectionTitle": "OUR PREMIUM SERVICES",
+            "sectionDescription": "We offer a full range of grooming services tailored to the modern gentleman who values his appearance.",
+            "items": [
+              {
+                "id": "service-classic-haircut",
+                "title": "CLASSIC HAIRCUT",
+                "description": "A tailored cut that suits your face shape and personal style preference.",
+                "price": "$45.00",
+                "iconType": "scissors"
+              },
+              {
+                "id": "service-beard-sculpting",
+                "title": "BEARD SCULPTING",
+                "description": "Precision trimming, shaping, and edging to enhance your facial features.",
+                "price": "$35.00",
+                "iconType": "face"
+              },
+              {
+                "id": "service-hot-towel-shave",
+                "title": "HOT TOWEL SHAVE",
+                "description": "A luxurious traditional straight razor shave with premium oils and steam.",
+                "price": "$55.00",
+                "iconType": "towel"
+              },
+              {
+                "id": "service-royal-suite",
+                "title": "THE ROYAL SUITE",
+                "description": "Our signature package including haircut, shave, and facial treatment.",
+                "price": "$110.00",
+                "iconType": "crown"
+              }
+            ]
+          },
+          "settings": {}
+        },
+        {
+          "id": "home-gallery",
+          "editorLabel": "Section 3 - Gallery",
+          "type": "gallery",
+          "variant": "grid",
+          "enabled": true,
+          "content": {
+            "sectionLabel": "OUR WORK",
+            "sectionTitle": "THE SIGNATURE GALLERY",
+            "images": [
+              {
+                "id": "gallery-image-1",
+                "image": {
+                  "src": "/gallery/gallery-1.svg",
+                  "alt": null
+                }
+              },
+              {
+                "id": "gallery-image-2",
+                "image": {
+                  "src": "/gallery/gallery-2.svg",
+                  "alt": null
+                }
+              },
+              {
+                "id": "gallery-image-3",
+                "image": {
+                  "src": "/gallery/gallery-3.svg",
+                  "alt": null
+                }
+              },
+              {
+                "id": "gallery-image-4",
+                "image": {
+                  "src": "/gallery/gallery-4.svg",
+                  "alt": null
+                }
+              },
+              {
+                "id": "gallery-image-5",
+                "image": {
+                  "src": "/gallery/gallery-5.svg",
+                  "alt": null
+                }
+              },
+              {
+                "id": "gallery-image-6",
+                "image": {
+                  "src": "/gallery/gallery-6.svg",
+                  "alt": null
+                }
+              }
+            ]
+          },
+          "settings": {}
+        },
+        {
+          "id": "home-testimonials",
+          "editorLabel": "Section 4 - Testimonials",
+          "type": "testimonials",
+          "variant": "grid",
+          "enabled": true,
+          "content": {
+            "sectionLabel": "TESTIMONIALS",
+            "sectionTitle": "WHAT OUR\nCLIENTS SAY",
+            "sectionDescription": "Join the community of gentlemen who trust us with their image. Quality is our only standard.",
+            "items": [
+              {
+                "id": "testimonial-marcus-sterling",
+                "name": "MARCUS STERLING",
+                "role": "ENTREPRENEUR",
+                "avatar": {
+                  "src": "/testimonials/avatar-marcus.svg",
+                  "alt": "MARCUS STERLING"
+                },
+                "text": "Best cut I've had in years. The attention to detail is unmatched. It's not just a haircut, it's an experience."
+              },
+              {
+                "id": "testimonial-james-dawson",
+                "name": "JAMES DAWSON",
+                "role": "ARCHITECT",
+                "avatar": {
+                  "src": "/testimonials/avatar-james.svg",
+                  "alt": "JAMES DAWSON"
+                },
+                "text": "The hot towel shave is legendary. I've been coming here for 3 years and they never miss a beat. True pros."
+              },
+              {
+                "id": "testimonial-leo-bennett",
+                "name": "LEO BENNETT",
+                "role": "DESIGNER",
+                "avatar": {
+                  "src": "/testimonials/avatar-marcus.svg",
+                  "alt": "LEO BENNETT"
+                },
+                "text": "From consultation to finish, every detail felt premium. The team understands style and delivers consistently."
+              },
+              {
+                "id": "testimonial-ethan-clarke",
+                "name": "ETHAN CLARKE",
+                "role": "CONSULTANT",
+                "avatar": {
+                  "src": "/testimonials/avatar-james.svg",
+                  "alt": "ETHAN CLARKE"
+                },
+                "text": "I travel across town just for this place. Clean cuts, sharp beard work, and a level of care that stands out."
+              }
+            ]
+          },
+          "settings": {}
+        },
+        {
+          "id": "home-pricing",
+          "editorLabel": "Section 5 - Pricing",
+          "type": "pricing",
+          "variant": "cards",
+          "enabled": true,
+          "content": {
+            "sectionTitle": "TRANSPARENT PRICING",
+            "popularLabel": "POPULAR",
+            "bookButtonLabel": "BOOK NOW",
+            "plans": [
+              {
+                "id": "pricing-plan-classic-cut",
+                "name": "CLASSIC CUT",
+                "price": "$25",
+                "features": [
+                  "Standard haircut",
+                  "Beard trim",
+                  "Complimentary beverage",
+                  "Styling consultation"
+                ],
+                "featured": false,
+                "action": {
+                  "id": "pricing-classic-cut-book-action",
+                  "label": "BOOK NOW",
+                  "url": null,
+                  "target": "_self",
+                  "style": "primary",
+                  "icon": null
+                }
+              },
+              {
+                "id": "pricing-plan-premium-cut",
+                "name": "PREMIUM CUT",
+                "price": "$45",
+                "features": [
+                  "Expert styling",
+                  "Hot towel shave",
+                  "Premium products",
+                  "Complimentary beverage",
+                  "VIP experience"
+                ],
+                "featured": true,
+                "action": {
+                  "id": "pricing-premium-cut-book-action",
+                  "label": "BOOK NOW",
+                  "url": null,
+                  "target": "_self",
+                  "style": "primary",
+                  "icon": null
+                }
+              },
+              {
+                "id": "pricing-plan-deluxe-package",
+                "name": "DELUXE PACKAGE",
+                "price": "$75",
+                "features": [
+                  "Full grooming service",
+                  "Facial treatment",
+                  "Beard sculpting",
+                  "Hot towel ritual",
+                  "Premium products",
+                  "Priority booking"
+                ],
+                "featured": false,
+                "action": {
+                  "id": "pricing-deluxe-package-book-action",
+                  "label": "BOOK NOW",
+                  "url": null,
+                  "target": "_self",
+                  "style": "primary",
+                  "icon": null
+                }
+              }
+            ]
+          },
+          "settings": {}
+        }
+      ]
+    },
+    {
+      "id": "page-contact",
+      "editorLabel": "Contact Page",
+      "title": "GET IN TOUCH",
+      "slug": "/contact",
+      "enabled": true,
+      "sections": [
+        {
+          "id": "contact-hero",
+          "editorLabel": "Section 1 - Contact Hero",
+          "type": "contact-details",
+          "variant": "cards",
+          "enabled": true,
+          "content": {
+            "title": "GET IN TOUCH",
+            "cards": [
+              {
+                "id": "contact-card-phone",
+                "iconType": "phone",
+                "title": "PHONE",
+                "value": "(555) 123-4567"
+              },
+              {
+                "id": "contact-card-email",
+                "iconType": "mail",
+                "title": "EMAIL",
+                "value": "info@barbershop.com"
+              },
+              {
+                "id": "contact-card-address",
+                "iconType": "mapPin",
+                "title": "ADDRESS",
+                "value": "123 Main Street, New York, NY"
+              },
+              {
+                "id": "contact-card-hours",
+                "iconType": "clock",
+                "title": "HOURS",
+                "value": "Mon-Fri: 9AM-6PM"
+              }
+            ]
+          },
+          "settings": {}
+        },
+        {
+          "id": "contact-form",
+          "editorLabel": "Section 2 - Contact Form",
+          "type": "form",
+          "variant": "contact",
+          "enabled": true,
+          "content": {
+            "title": "SEND US A MESSAGE",
+            "description": "Have a question or want to book an appointment? Fill out the form and we'll get back to you as soon as possible.",
+            "fields": [
+              {
+                "id": "contact-form-first-name",
+                "name": "firstName",
+                "label": "First Name"
+              },
+              {
+                "id": "contact-form-last-name",
+                "name": "lastName",
+                "label": "Last Name"
+              },
+              {
+                "id": "contact-form-email",
+                "name": "email",
+                "label": "Email Address"
+              },
+              {
+                "id": "contact-form-message",
+                "name": "message",
+                "label": "Send us your message"
+              }
+            ],
+            "submitAction": {
+              "id": "contact-form-submit-action",
+              "label": "SEND MESSAGE",
+              "url": null,
+              "target": "_self",
+              "style": "primary",
+              "icon": null
+            },
+            "image": {
+              "src": "/contact-image.jpg",
+              "alt": null
+            }
+          },
+          "settings": {}
+        },
+        {
+          "id": "contact-map",
+          "editorLabel": "Section 3 - Map",
+          "type": "map",
+          "variant": "embedded",
+          "enabled": true,
+          "content": {
+            "title": "FIND US",
+            "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.1234567!2d-74.0!3d40.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1234567890",
+            "footerText": "123 Main Street, New York, NY 10001 | info@barbershop.com | (555) 123-4567"
+          },
+          "settings": {}
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "id": "main-footer",
+    "editorLabel": "Footer",
+    "enabled": true,
+    "variant": "default",
+    "logo": {
+      "mode": "text",
+      "text": "BARBERSHOP",
+      "image": null,
+      "url": "/"
+    },
+    "description": "Premium barbering since 2010.",
+    "hours": [
+      "Mon-Fri: 10am-7pm",
+      "Sat: 10am-6pm",
+      "Sun: Closed"
+    ],
+    "contact": {
+      "phone": "(555) 123-4567",
+      "email": "info@barbershop.com",
+      "address": "123 Main Street"
+    },
+    "columns": [
+      {
+        "id": "ft-col-explore",
+        "title": "Explore",
+        "links": [
+          { "id": "ft-explore-home", "label": "Home", "url": "/", "href": "/" },
+          { "id": "ft-explore-services", "label": "Services", "url": "#services", "href": "#services" },
+          { "id": "ft-explore-gallery", "label": "Gallery", "url": "#gallery", "href": "#gallery" },
+          { "id": "ft-explore-about", "label": "About", "url": "#about", "href": "#about" },
+          { "id": "ft-explore-contact", "label": "Contact", "url": "/contact", "href": "/contact" }
+        ]
+      },
+      {
+        "id": "ft-col-services",
+        "title": "Our Services",
+        "links": [
+          { "id": "ft-svc-classic", "label": "Classic Cut", "url": "#services", "href": "#services" },
+          { "id": "ft-svc-beard", "label": "Beard Trim", "url": "#services", "href": "#services" },
+          { "id": "ft-svc-shave", "label": "Hot Towel Shave", "url": "#services", "href": "#services" },
+          { "id": "ft-svc-package", "label": "Full Service", "url": "#services", "href": "#services" }
+        ]
+      },
+      {
+        "id": "ft-col-quick",
+        "title": "Quick Links",
+        "links": [
+          { "id": "ft-quick-book", "label": "Book Now", "url": "/contact", "href": "/contact" },
+          { "id": "ft-quick-pricing", "label": "Pricing", "url": "#pricing", "href": "#pricing" },
+          { "id": "ft-quick-privacy", "label": "Privacy Policy", "url": "#", "href": "#" },
+          { "id": "ft-quick-terms", "label": "Terms", "url": "#", "href": "#" }
+        ]
+      }
+    ],
+    "newsletter": null,
+    "socialLinks": [
+      {
+        "id": "footer-social-instagram",
+        "platform": "instagram",
+        "label": "Instagram",
+        "url": "#",
+        "target": "_self"
+      },
+      {
+        "id": "footer-social-facebook",
+        "platform": "facebook",
+        "label": "Facebook",
+        "url": "#",
+        "target": "_self"
+      },
+      {
+        "id": "footer-social-twitter",
+        "platform": "twitter",
+        "label": "Twitter",
+        "url": "#",
+        "target": "_self"
+      }
+    ],
+    "legalLinks": [],
+    "copyright": "© 2024 Premium Barbershop. All rights reserved.",
+    "settings": {}
+  }
+}

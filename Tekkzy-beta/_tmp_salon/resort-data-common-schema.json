@@ -1,0 +1,1451 @@
+{
+  "InstitutionId": "Resort001",
+  "schemaVersion": "1.0.0",
+  "template": {
+    "id": "template-resort-tekkzy",
+    "name": "Tekkzy Resort",
+    "version": "1.0.0"
+  },
+  "site": {
+    "name": "Tekkzy Resort",
+    "description": "Where luxury meets incredible serenity. Exclusive boutique hotel experience.",
+    "locale": "en-IN",
+    "favicon": null,
+    "contact": {
+      "email": "info@tekkzyresort.com",
+      "phone": "+1-800-TEKKZY",
+      "address": "123 Paradise Isle, Tekkzy Islands"
+    },
+    "socialLinks": [
+      {
+        "id": "social-instagram",
+        "platform": "Instagram",
+        "label": "Instagram",
+        "url": "https://instagram.com",
+        "target": "_blank",
+        "icon": "FaInstagram",
+        "followers": "230k followers",
+        "bgColor": "bg-gradient-to-r from-purple-600 via-pink-500 to-orange-500",
+        "sourceId": 1
+      },
+      {
+        "id": "social-twitter",
+        "platform": "Twitter",
+        "label": "Twitter",
+        "url": "https://twitter.com",
+        "target": "_blank",
+        "icon": "FaTwitter",
+        "followers": "85K followers",
+        "bgColor": "bg-black",
+        "sourceId": 2
+      },
+      {
+        "id": "social-youtube",
+        "platform": "YouTube",
+        "label": "YouTube",
+        "url": "https://youtube.com",
+        "target": "_blank",
+        "icon": "FaYoutube",
+        "followers": "165k subscribers",
+        "bgColor": "bg-red-600",
+        "sourceId": 3
+      },
+      {
+        "id": "social-facebook",
+        "platform": "Facebook",
+        "label": "Facebook",
+        "url": "https://facebook.com",
+        "target": "_blank",
+        "icon": "FaFacebookF",
+        "followers": "192K likes",
+        "bgColor": "bg-blue-600",
+        "sourceId": 4
+      },
+      {
+        "id": "social-linkedin",
+        "platform": "LinkedIn",
+        "label": "LinkedIn",
+        "url": "https://linkedin.com",
+        "target": "_blank",
+        "icon": "FaLinkedinIn",
+        "followers": "Follow for updates",
+        "bgColor": "bg-blue-700",
+        "sourceId": 5
+      }
+    ],
+    "api": {
+      "contactEndpoint": "https://tg2d8qq95k.execute-api.us-east-2.amazonaws.com/dev/tekkzy/contact"
+    },
+    "contactMail": "info@tekkzyresort.com"
+  },
+  "navigation": {
+    "id": "main-navigation",
+    "editorLabel": "Navigation",
+    "enabled": true,
+    "variant": "resort",
+    "logo": {
+      "mode": "text",
+      "text": "Tekkzy Resort",
+      "image": null,
+      "url": "/"
+    },
+    "items": [
+      {
+        "id": "nav-home",
+        "label": "Home",
+        "url": "/",
+        "target": "_self",
+        "children": []
+      },
+      {
+        "id": "nav-about-us",
+        "label": "About Us",
+        "url": "/about",
+        "target": "_self",
+        "children": []
+      },
+      {
+        "id": "nav-contact-us",
+        "label": "Contact Us",
+        "url": "/contact",
+        "target": "_self",
+        "children": []
+      }
+    ],
+    "actions": [
+      {
+        "id": "nav-reserve-action",
+        "label": "Reserve",
+        "url": "/contact",
+        "target": "_self",
+        "style": "primary",
+        "icon": null
+      }
+    ],
+    "settings": {
+      "sticky": true,
+      "showOnMobile": true,
+      "phone": "+1-888-TKZY-RST"
+    }
+  },
+  "pages": [
+    {
+      "id": "page-home",
+      "editorLabel": "Home Page",
+      "title": "Home",
+      "slug": "/",
+      "enabled": true,
+      "seo": {
+        "title": "Your Lovely Dream Journey\nStarts Here",
+        "description": "Curated Stay At the world's most incredible destinations",
+        "image": null,
+        "noIndex": false
+      },
+      "sections": [
+        {
+          "id": "home-hero",
+          "editorLabel": "Section 1 - Hero",
+          "type": "hero",
+          "variant": "resort-search",
+          "enabled": true,
+          "content": {
+            "eyebrow": "Discover",
+            "title": "Your Lovely Dream Journey\nStarts Here",
+            "subtitle": "Curated Stay At the world's most incredible destinations",
+            "description": null,
+            "media": null,
+            "actions": [],
+            "badges": [
+              {
+                "id": "hero-tag-7-days",
+                "label": "7 Days"
+              },
+              {
+                "id": "hero-tag-beach-stay",
+                "label": "Beach Stay"
+              },
+              {
+                "id": "hero-tag-mediterranean-cruise",
+                "label": "Mediterranean Cruise"
+              },
+              {
+                "id": "hero-tag-cherry-blossom",
+                "label": "Cherry Blossom"
+              },
+              {
+                "id": "hero-tag-night-party",
+                "label": "Night Party"
+              }
+            ],
+            "search": {
+              "fields": [
+                {
+                  "id": "arrival",
+                  "name": "arrival",
+                  "label": "Arrival",
+                  "type": "date",
+                  "value": "2024-12-15",
+                  "options": []
+                },
+                {
+                  "id": "departure",
+                  "name": "departure",
+                  "label": "Departure",
+                  "type": "date",
+                  "value": "2024-12-20",
+                  "options": []
+                },
+                {
+                  "id": "guests",
+                  "name": "guests",
+                  "label": "Guests",
+                  "type": "text",
+                  "value": "Adult - 2, Child 0",
+                  "options": []
+                },
+                {
+                  "id": "suite",
+                  "name": "suite",
+                  "label": "Suite",
+                  "type": "text",
+                  "value": "Dulex",
+                  "options": []
+                }
+              ],
+              "action": {
+                "id": "hero-check-availability-action",
+                "label": "Check Availability",
+                "url": "#enquiry",
+                "target": "_self",
+                "style": "primary",
+                "icon": null,
+                "formName": "Availability Enquiry"
+              }
+            }
+          },
+          "settings": {
+            "width": "container",
+            "theme": "light",
+            "textAlign": "left",
+            "paddingTop": "large",
+            "paddingBottom": "large"
+          }
+        },
+        {
+          "id": "home-stay",
+          "editorLabel": "Section 2 - Stay Experience",
+          "type": "feature-grid",
+          "variant": "four-columns",
+          "enabled": true,
+          "content": {
+            "eyebrow": null,
+            "title": "Where Every Stay Becomes Art",
+            "description": "Tekkzy Resort is more than a hotel—it's a carefully curated experience where contemporary art, architectural brilliance, and impeccable service converge. Every corner tells a story, every suite is a masterpiece, and every moment is designed to inspire.",
+            "items": [
+              {
+                "id": "stay-artistry",
+                "title": "Artistry",
+                "description": "Rotating exhibitions from emerging and established artists transform our spaces into living galleries",
+                "icon": "FaPalette",
+                "image": null,
+                "link": null
+              },
+              {
+                "id": "stay-intimacy",
+                "title": "Intimacy",
+                "description": "With only 42 suites, we ensure personalized attention and exclusive experiences for every guest",
+                "icon": "FaHeart",
+                "image": null,
+                "link": null
+              },
+              {
+                "id": "stay-craftsmanship",
+                "title": "Craftsmanship",
+                "description": "Every detail, from bespoke furnishings to artisanal amenities, reflects uncompromising quality",
+                "icon": "FaAward",
+                "image": null,
+                "link": null
+              },
+              {
+                "id": "stay-discovery",
+                "title": "Discovery",
+                "description": "Curated cultural experiences connect you with the city's hidden gems and creative soul",
+                "icon": "FaCompass",
+                "image": null,
+                "link": null
+              }
+            ],
+            "actions": []
+          },
+          "settings": {
+            "width": "container",
+            "theme": "light",
+            "textAlign": "center",
+            "columns": {
+              "desktop": 4,
+              "tablet": 2,
+              "mobile": 1
+            },
+            "paddingTop": "large",
+            "paddingBottom": "large"
+          }
+        },
+        {
+          "id": "home-gallery",
+          "editorLabel": "Section 3 - Gallery",
+          "type": "gallery",
+          "variant": "featured-grid",
+          "enabled": true,
+          "content": {
+            "eyebrow": null,
+            "title": "Gallery",
+            "description": " Resort is Tekkzymore than a hotel—it's a carefully curated experience where contemporary art, architectural brilliance, and impeccable service converge. Every corner tells a story, every suite is a masterpiece, and every moment is designed to inspire.",
+            "featured": {
+              "id": "gallery-featured",
+              "image": {
+                "src": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80",
+                "alt": "Pool and resort view",
+                "fit": "cover",
+                "focalPoint": {
+                  "x": 50,
+                  "y": 50
+                }
+              },
+              "caption": null,
+              "link": null
+            },
+            "items": [
+              {
+                "id": "gallery-image-1",
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1566522650166-007fcf9a0dbb?w=500&q=80",
+                  "alt": "Gallery image 1",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "caption": null,
+                "link": null
+              },
+              {
+                "id": "gallery-image-2",
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1564078516577-c3a86a37b151?w=500&q=80",
+                  "alt": "Gallery image 2",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "caption": null,
+                "link": null
+              },
+              {
+                "id": "gallery-image-3",
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1551632786-de41ec16a83a?w=500&q=80",
+                  "alt": "Gallery image 3",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "caption": null,
+                "link": null
+              },
+              {
+                "id": "gallery-image-4",
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1555095519-08d95ffa1aee?w=500&q=80",
+                  "alt": "Gallery image 4",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "caption": null,
+                "link": null
+              }
+            ],
+            "actions": []
+          },
+          "settings": {
+            "width": "container",
+            "theme": "light",
+            "columns": {
+              "desktop": 4,
+              "tablet": 2,
+              "mobile": 1
+            },
+            "paddingTop": "large",
+            "paddingBottom": "large"
+          }
+        },
+        {
+          "id": "home-pricing",
+          "editorLabel": "Section 4 - Pricing",
+          "type": "pricing",
+          "variant": "room-cards",
+          "enabled": true,
+          "content": {
+            "eyebrow": null,
+            "title": "Pricing",
+            "description": "Tekkzy Rseort is more than a hotel—it's a carefully curated experience where contemporary art,masterpiece, and every moment is designed to inspire..",
+            "items": [
+              {
+                "id": "pricing-room-1",
+                "sourceId": 1,
+                "title": "Superior Room",
+                "price": 4220,
+                "currency": "₹",
+                "period": "/night",
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=500&q=80",
+                  "alt": "Superior Room",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "features": [
+                  "High floor",
+                  "Ocean bed",
+                  "Sea view",
+                  "Night Party",
+                  "Advances"
+                ],
+                "action": {
+                  "label": "Select",
+                  "formName": "Room Enquiry"
+                }
+              },
+              {
+                "id": "pricing-room-2",
+                "sourceId": 2,
+                "title": "Superior Room",
+                "price": 4220,
+                "currency": "₹",
+                "period": "/night",
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=500&q=80",
+                  "alt": "Superior Room",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "features": [
+                  "High floor",
+                  "Ocean bed",
+                  "Sea view",
+                  "Night Party",
+                  "Advances"
+                ],
+                "action": {
+                  "label": "Select",
+                  "formName": "Room Enquiry"
+                }
+              },
+              {
+                "id": "pricing-room-3",
+                "sourceId": 3,
+                "title": "Superior Room",
+                "price": 4220,
+                "currency": "₹",
+                "period": "/night",
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=500&q=80",
+                  "alt": "Superior Room",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "features": [
+                  "High floor",
+                  "Ocean bed",
+                  "Sea view",
+                  "Night Party",
+                  "Advances"
+                ],
+                "action": {
+                  "label": "Select",
+                  "formName": "Room Enquiry"
+                }
+              }
+            ],
+            "actions": []
+          },
+          "settings": {
+            "width": "container",
+            "theme": "light",
+            "textAlign": "center",
+            "columns": {
+              "desktop": 3,
+              "tablet": 2,
+              "mobile": 1
+            },
+            "paddingTop": "large",
+            "paddingBottom": "large"
+          }
+        },
+        {
+          "id": "home-events-weddings",
+          "editorLabel": "Section 5 - Events and Weddings",
+          "type": "cta",
+          "variant": "background-image",
+          "enabled": true,
+          "content": {
+            "eyebrow": null,
+            "title": "Events & Weddings",
+            "description": "Tekkzy Rseort is more than a hotel—it's a carefully curated experience where contemporary art, masterpiece, and every moment is designed to inspire.",
+            "media": {
+              "type": "image",
+              "image": {
+                "src": "https://images.unsplash.com/photo-1522891419672-87b3ba814280?w=1200&q=80",
+                "alt": "Events & Weddings",
+                "fit": "cover",
+                "focalPoint": {
+                  "x": 50,
+                  "y": 50
+                }
+              },
+              "video": null
+            },
+            "actions": [
+              {
+                "id": "events-book-now-action",
+                "label": "Book Now",
+                "url": "#enquiry",
+                "target": "_self",
+                "style": "primary",
+                "icon": null,
+                "formName": "Events & Weddings Enquiry"
+              }
+            ]
+          },
+          "settings": {
+            "width": "container",
+            "theme": "brand",
+            "textAlign": "center",
+            "paddingTop": "large",
+            "paddingBottom": "large"
+          }
+        },
+        {
+          "id": "home-customer-voices",
+          "editorLabel": "Section 6 - Customer Voices",
+          "type": "testimonials",
+          "variant": "cards",
+          "enabled": true,
+          "content": {
+            "eyebrow": null,
+            "title": "Know From Our Customers",
+            "subtitle": "Tekkzy Rseort is more than a hotel—it's a carefully curated experience where contemporary art.",
+            "description": null,
+            "items": [
+              {
+                "id": "testimonial-alexandra-m",
+                "sourceId": 1,
+                "quote": "Maison Noir is a masterclass in boutique luxury. From the curated art collection to the impeccable service, every detail reflects thoughtful sophistication. Our suite was a sanctuary of style.",
+                "rating": 5,
+                "author": {
+                  "name": "Alexandra M.",
+                  "role": "Premier Suite • November 2024",
+                  "company": null,
+                  "image": {
+                    "src": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80",
+                    "alt": "Alexandra M.",
+                    "fit": "cover",
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  }
+                }
+              },
+              {
+                "id": "testimonial-marcus-sofia-t",
+                "sourceId": 2,
+                "quote": "An artistic experience unlike any other. The Michelin-starred restaurant exceeded all expectations, and the personalized service made us feel like we were the only guests. Truly exceptional.",
+                "rating": 5,
+                "author": {
+                  "name": "Marcus & Sofia T.",
+                  "role": "Signature Suite • October 2024",
+                  "company": null,
+                  "image": {
+                    "src": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80",
+                    "alt": "Marcus & Sofia T.",
+                    "fit": "cover",
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  }
+                }
+              },
+              {
+                "id": "testimonial-catherine-l",
+                "sourceId": 3,
+                "quote": "The perfect blend of contemporary design and intimate luxury. Our penthouse suite was a work of art, complete with original paintings and a terrace that offered the most stunning city views.",
+                "rating": 5,
+                "author": {
+                  "name": "Catherine L.",
+                  "role": "Penthouse Suite • December 2024",
+                  "company": null,
+                  "image": {
+                    "src": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=200&q=80",
+                    "alt": "Catherine L.",
+                    "fit": "cover",
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "settings": {
+            "width": "container",
+            "theme": "muted",
+            "autoPlay": false,
+            "paddingTop": "large",
+            "paddingBottom": "large"
+          }
+        },
+        {
+          "id": "home-faq",
+          "editorLabel": "Section 7 - FAQ",
+          "type": "faq",
+          "variant": "accordion",
+          "enabled": true,
+          "content": {
+            "eyebrow": "F-A-Q",
+            "title": "F-A-Q",
+            "subtitle": "Frequently Asked Questions About Tekkzy Resort",
+            "description": "Everything you need to know about Tekkzy Resort",
+            "items": [
+              {
+                "id": "faq-what-is-tekkzy-resort",
+                "sourceId": 1,
+                "question": "What is Tekkzy Resort?",
+                "answer": "Tekkzy Resort is a luxury boutique hotel that combines contemporary art, architectural excellence, and personalized service. We offer an exclusive collection of 42 suites, each designed as a masterpiece, with rotating art exhibitions and curated cultural experiences."
+              },
+              {
+                "id": "faq-what-is-our-mission",
+                "sourceId": 2,
+                "question": "What is our mission?",
+                "answer": "Our mission is to create memorable experiences where contemporary art meets architectural brilliance. We believe every guest deserves personalized attention and exclusive access to the city's cultural treasures."
+              },
+              {
+                "id": "faq-hidden-charges",
+                "sourceId": 3,
+                "question": "Do I have to pay any hidden charges?",
+                "answer": "No, we believe in complete transparency. All pricing is clearly listed upfront with no hidden charges. What you see is what you pay. Any additional services are optional and clearly communicated."
+              },
+              {
+                "id": "faq-how-can-i-reach",
+                "sourceId": 4,
+                "question": "How can I Reach?",
+                "answer": "You can reach us via phone at +1-888-TKZY-RST, email us, or visit our website for more information. Our concierge team is available 24/7 to assist with reservations and inquiries."
+              },
+              {
+                "id": "faq-weddings-events",
+                "sourceId": 5,
+                "question": "Can I book For Wedding And Events?",
+                "answer": "Absolutely! Tekkzy Resort is perfect for weddings, corporate events, and special occasions. We offer tailored packages and event planning services. Contact our events team to discuss your requirements."
+              },
+              {
+                "id": "faq-book-a-stay",
+                "sourceId": 6,
+                "question": "How can I Book A Stay Here?",
+                "answer": "You can book directly through our website, call our reservations team, or use our mobile app. We also offer special packages and early-bird discounts for advance bookings."
+              }
+            ]
+          },
+          "settings": {
+            "width": "narrow",
+            "theme": "light",
+            "allowMultipleOpen": false,
+            "paddingTop": "large",
+            "paddingBottom": "large"
+          }
+        }
+      ]
+    },
+    {
+      "id": "page-about",
+      "editorLabel": "About Us Page",
+      "title": "About Us",
+      "slug": "/about",
+      "enabled": true,
+      "seo": {
+        "title": "Crafting Unforgettable",
+        "description": "The passionate individuals behind every exceptional stay",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1920&q=80",
+          "alt": "Crafting Unforgettable",
+          "fit": "cover",
+          "focalPoint": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        "noIndex": false
+      },
+      "sections": [
+        {
+          "id": "about-hero",
+          "editorLabel": "Section 1 - About Hero",
+          "type": "hero",
+          "variant": "page-header",
+          "enabled": true,
+          "content": {
+            "eyebrow": null,
+            "title": "Crafting Unforgettable",
+            "subtitle": null,
+            "description": null,
+            "media": {
+              "type": "image",
+              "image": {
+                "src": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1920&q=80",
+                "alt": "Crafting Unforgettable",
+                "fit": "cover",
+                "focalPoint": {
+                  "x": 50,
+                  "y": 50
+                }
+              },
+              "video": null
+            },
+            "actions": [],
+            "breadcrumb": {
+              "home": "Home",
+              "current": "About Us"
+            }
+          },
+          "settings": {
+            "width": "full",
+            "theme": "dark",
+            "textAlign": "center",
+            "paddingTop": "large",
+            "paddingBottom": "large"
+          }
+        },
+        {
+          "id": "about-know-about-us",
+          "editorLabel": "Section 2 - Know About Us",
+          "type": "content",
+          "variant": "image-left",
+          "enabled": true,
+          "content": {
+            "eyebrow": null,
+            "title": "Know About Us",
+            "subtitle": null,
+            "body": [
+              {
+                "id": "about-paragraph-1",
+                "type": "paragraph",
+                "text": "Embark on an unforgettable 7-day journey through the enchanting island of Bali. From the lush rice terraces of Ubud to the pristine beaches of Seminyak, this carefully curated adventure combines cultural immersion, natural wonders, and luxurious comfort."
+              },
+              {
+                "id": "about-paragraph-2",
+                "type": "paragraph",
+                "text": "Stay in handpicked luxury villas, explore ancient temples with expert local guides, master traditional Balinese cooking, and unwind with authentic spa treatments. Whether you're seeking adventure, relaxation, or cultural enrichment, this package offers the perfect balance of activities and leisure time."
+              },
+              {
+                "id": "about-paragraph-3",
+                "type": "paragraph",
+                "text": "Our small-group tours (maximum 12 travelers) ensure personalized attention and authentic experiences. With all logistics handled—from airport transfers to entrance fees—you can focus on creating memories that will last a lifetime."
+              }
+            ],
+            "media": {
+              "type": "image",
+              "image": {
+                "src": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80",
+                "alt": "Know About Us",
+                "fit": "cover",
+                "focalPoint": {
+                  "x": 50,
+                  "y": 50
+                }
+              },
+              "video": null
+            },
+            "tags": [
+              {
+                "id": "about-tag-adventure-seekers",
+                "icon": "🏃",
+                "label": "Adventure Seekers"
+              },
+              {
+                "id": "about-tag-couples",
+                "icon": "👫",
+                "label": "Couples"
+              },
+              {
+                "id": "about-tag-solo-travelers",
+                "icon": "👤",
+                "label": "Solo Travelers"
+              },
+              {
+                "id": "about-tag-photography-enthusiasts",
+                "icon": "📷",
+                "label": "Photography Enthusiasts"
+              },
+              {
+                "id": "about-tag-wellness-lovers",
+                "icon": "🧘",
+                "label": "Wellness Lovers"
+              }
+            ],
+            "actions": []
+          },
+          "settings": {
+            "width": "container",
+            "theme": "light",
+            "textAlign": "left",
+            "mediaPosition": "left",
+            "paddingTop": "large",
+            "paddingBottom": "large"
+          }
+        },
+        {
+          "id": "about-we-provide",
+          "editorLabel": "Section 3 - We Provide",
+          "type": "feature-grid",
+          "variant": "background-image",
+          "enabled": true,
+          "content": {
+            "eyebrow": null,
+            "title": "We Provide",
+            "description": "Tekkzy Resort is more than a hotel—it's a carefully curated experience where contemporary art, we Provide the best",
+            "backgroundImage": {
+              "src": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=80",
+              "alt": "We Provide",
+              "fit": "cover",
+              "focalPoint": {
+                "x": 50,
+                "y": 50
+              }
+            },
+            "items": [
+              {
+                "id": "service-temple-tours",
+                "title": "Temple Tours",
+                "description": "Visit sacred temples including Tanah Lot, Uluwatu, and Besakih",
+                "icon": "⛩️",
+                "image": null,
+                "link": null
+              },
+              {
+                "id": "service-water-sports",
+                "title": "Water Sports",
+                "description": "Surfing, snorkeling, and paddleboarding at pristine beaches",
+                "icon": "🌊",
+                "image": null,
+                "link": null
+              },
+              {
+                "id": "service-cooking-class",
+                "title": "Cooking Class",
+                "description": "Master traditional Balinese recipes with local chef",
+                "icon": "🍴",
+                "image": null,
+                "link": null
+              },
+              {
+                "id": "service-spa-experience",
+                "title": "Spa Experience",
+                "description": "Authentic Balinese massage and wellness treatments",
+                "icon": "🪷",
+                "image": null,
+                "link": null
+              },
+              {
+                "id": "service-rice-terraces",
+                "title": "Rice Terraces",
+                "description": "Explore the iconic Tegallalang rice paddies",
+                "icon": "⛰️",
+                "image": null,
+                "link": null
+              },
+              {
+                "id": "service-beach-time",
+                "title": "Beach Time",
+                "description": "Relax at Seminyak's beautiful beaches",
+                "icon": "🏖️",
+                "image": null,
+                "link": null
+              }
+            ],
+            "actions": []
+          },
+          "settings": {
+            "width": "container",
+            "theme": "dark",
+            "textAlign": "center",
+            "columns": {
+              "desktop": 3,
+              "tablet": 2,
+              "mobile": 1
+            },
+            "paddingTop": "large",
+            "paddingBottom": "large"
+          }
+        },
+        {
+          "id": "about-visionaries",
+          "editorLabel": "Section 4 - Meet The Visionaries",
+          "type": "team",
+          "variant": "three-columns",
+          "enabled": true,
+          "content": {
+            "eyebrow": null,
+            "title": "Meet The Visionaries",
+            "description": "The passionate individuals behind every exceptional stay",
+            "items": [
+              {
+                "id": "team-pk-mishra",
+                "name": "Pk Mishra",
+                "role": "Authentic Balinese massage and Authentic Balinese",
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&q=80",
+                  "alt": "Pk Mishra",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "links": []
+              },
+              {
+                "id": "team-sai-swaroop",
+                "name": "Sai Swaroop",
+                "role": "Authentic Balinese massage and Authentic Balinese",
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&q=80",
+                  "alt": "Sai Swaroop",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "links": []
+              },
+              {
+                "id": "team-avishek-mishra",
+                "name": "Avishek Mishra",
+                "role": "Authentic Balinese massage and Authentic Balinese",
+                "image": {
+                  "src": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&q=80",
+                  "alt": "Avishek Mishra",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "links": []
+              }
+            ],
+            "actions": []
+          },
+          "settings": {
+            "width": "container",
+            "theme": "light",
+            "textAlign": "center",
+            "columns": {
+              "desktop": 3,
+              "tablet": 2,
+              "mobile": 1
+            },
+            "paddingTop": "large",
+            "paddingBottom": "large"
+          }
+        }
+      ]
+    },
+    {
+      "id": "page-contact",
+      "editorLabel": "Contact Us Page",
+      "title": "Contact Us",
+      "slug": "/contact",
+      "enabled": true,
+      "seo": {
+        "title": "Contact Us",
+        "description": null,
+        "image": null,
+        "noIndex": false
+      },
+      "sections": [
+        {
+          "id": "contact-form",
+          "editorLabel": "Section 0 - Contact Form",
+          "type": "contact-form",
+          "variant": "standard",
+          "enabled": true,
+          "content": {
+            "title": "Send Us a Message",
+            "subtitle": "Fill out the form below and our team will respond within 24 hours",
+            "officeTitle": "Visit Our Offices",
+            "officeSubtitle": "Reach Us Out Here",
+            "connectTitle": "Connect With Us",
+            "submitLabel": "Send Message",
+            "privacyText": "By submitting this form, you agree to our Privacy Policy",
+            "successMessage": "Thank you! Your message has been sent.",
+            "errorMessage": "Something went wrong. Please try again.",
+            "formName": "Contact Us",
+            "fields": [
+              {
+                "id": "fullName",
+                "label": "Full Name *"
+              },
+              {
+                "id": "email",
+                "label": "Email *"
+              },
+              {
+                "id": "phone",
+                "label": "Phone *"
+              },
+              {
+                "id": "inquiry",
+                "label": "Inquiry Type"
+              },
+              {
+                "id": "property",
+                "label": "Property Interest"
+              },
+              {
+                "id": "contactDate",
+                "label": "Preferred Date"
+              },
+              {
+                "id": "contactTime",
+                "label": "Preferred Time"
+              },
+              {
+                "id": "message",
+                "label": "Message"
+              }
+            ]
+          },
+          "settings": {
+            "width": "container",
+            "theme": "light",
+            "paddingTop": "large",
+            "paddingBottom": "large"
+          }
+        },
+        {
+          "id": "contact-social-media",
+          "editorLabel": "Section 1 - Social Media",
+          "type": "social-links",
+          "variant": "cards",
+          "enabled": true,
+          "content": {
+            "eyebrow": null,
+            "title": "Contact Us",
+            "description": null,
+            "items": [
+              {
+                "id": "contact-instagram",
+                "sourceId": 1,
+                "platform": "Instagram",
+                "label": "Instagram",
+                "url": "https://instagram.com",
+                "target": "_blank",
+                "icon": "FaInstagram",
+                "followers": "230k followers",
+                "bgColor": "bg-gradient-to-r from-purple-600 via-pink-500 to-orange-500"
+              },
+              {
+                "id": "contact-twitter",
+                "sourceId": 2,
+                "platform": "Twitter",
+                "label": "Twitter",
+                "url": "https://twitter.com",
+                "target": "_blank",
+                "icon": "FaTwitter",
+                "followers": "85K followers",
+                "bgColor": "bg-black"
+              },
+              {
+                "id": "contact-youtube",
+                "sourceId": 3,
+                "platform": "YouTube",
+                "label": "YouTube",
+                "url": "https://youtube.com",
+                "target": "_blank",
+                "icon": "FaYoutube",
+                "followers": "165k subscribers",
+                "bgColor": "bg-red-600"
+              },
+              {
+                "id": "contact-facebook",
+                "sourceId": 4,
+                "platform": "Facebook",
+                "label": "Facebook",
+                "url": "https://facebook.com",
+                "target": "_blank",
+                "icon": "FaFacebookF",
+                "followers": "192K likes",
+                "bgColor": "bg-blue-600"
+              },
+              {
+                "id": "contact-linkedin",
+                "sourceId": 5,
+                "platform": "LinkedIn",
+                "label": "LinkedIn",
+                "url": "https://linkedin.com",
+                "target": "_blank",
+                "icon": "FaLinkedinIn",
+                "followers": "Follow for updates",
+                "bgColor": "bg-blue-700"
+              }
+            ],
+            "actions": []
+          },
+          "settings": {
+            "width": "container",
+            "theme": "light",
+            "textAlign": "center",
+            "columns": {
+              "desktop": 5,
+              "tablet": 2,
+              "mobile": 1
+            },
+            "paddingTop": "large",
+            "paddingBottom": "large"
+          }
+        },
+        {
+          "id": "contact-map",
+          "editorLabel": "Section 2 - Map",
+          "type": "map",
+          "variant": "embed",
+          "enabled": true,
+          "content": {
+            "title": null,
+            "description": null,
+            "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119216.12345678901!2d83.1234567890123!3d19.9012345678901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a2148a7c6e1b5a5%3A0x3b8e3e3e3e3e3e3e!2sBhawanipatna%2C%20Odisha!5e0!3m2!1sen!2sin!4v1705583400000!5m2!1sen!2sin",
+            "actions": []
+          },
+          "settings": {
+            "width": "full",
+            "theme": "light",
+            "paddingTop": "none",
+            "paddingBottom": "none"
+          }
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "id": "main-footer",
+    "editorLabel": "Footer",
+    "enabled": true,
+    "variant": "columns",
+    "logo": {
+      "mode": "image",
+      "text": "TEKKZY RESORT",
+      "image": {
+        "src": "/resort001/images/bean.png",
+        "alt": "TEKKZY RESORT",
+        "fit": "contain",
+        "focalPoint": {
+          "x": 50,
+          "y": 50
+        }
+      },
+      "url": "/"
+    },
+    "description": "Where luxury meets incredible serenity. Exclusive boutique hotel experience.",
+    "columns": [
+      {
+        "id": "footer-quick-links",
+        "title": "Quick Links",
+        "links": [
+          {
+            "id": "footer-accommodations",
+            "label": "Accommodations",
+            "url": "/about",
+            "target": "_self"
+          },
+          {
+            "id": "footer-facilities",
+            "label": "Facilities",
+            "url": "/facilities",
+            "target": "_self"
+          },
+          {
+            "id": "footer-activities",
+            "label": "Activities",
+            "url": "/activities",
+            "target": "_self"
+          },
+          {
+            "id": "footer-contact-us",
+            "label": "Contact Us",
+            "url": "/contact",
+            "target": "_self"
+          }
+        ]
+      },
+      {
+        "id": "footer-contact",
+        "title": "Contact",
+        "links": []
+      }
+    ],
+    "contact": {
+      "title": "Contact",
+      "phone": "+1-800-TEKKZY",
+      "email": "info@tekkzyresort.com",
+      "address": "123 Paradise Isle, Tekkzy Islands",
+      "hours": "24/7 Service",
+      "items": [
+        "123 Tekkzy Plaza, Beachfront Lane",
+        "reservations@tekkzyresort.com",
+        "+1-888-TKZY-RST",
+        "24/7 Service"
+      ]
+    },
+    "newsletter": {
+      "enabled": true,
+      "title": "Newsletter",
+      "description": "Get updates on special offers and events",
+      "emailPlaceholder": "Enter your email",
+      "buttonLabel": "Subscribe"
+    },
+    "socialLinksTitle": "Follow Us",
+    "socialLinks": [
+      {
+        "id": "footer-facebook",
+        "platform": "facebook",
+        "label": "facebook",
+        "url": "https://facebook.com",
+        "target": "_blank"
+      },
+      {
+        "id": "footer-twitter",
+        "platform": "twitter",
+        "label": "twitter",
+        "url": "https://twitter.com",
+        "target": "_blank"
+      },
+      {
+        "id": "footer-instagram",
+        "platform": "instagram",
+        "label": "instagram",
+        "url": "https://instagram.com",
+        "target": "_blank"
+      }
+    ],
+    "legalLinks": [],
+    "copyright": null,
+    "settings": {
+      "theme": "dark"
+    },
+    "gallery": {
+      "images": [
+        {
+          "image": "/resort001/assets/footer1-CMc8nRKW.svg",
+          "alt": "Footer Gallery 1"
+        },
+        {
+          "image": "/resort001/assets/footer2-Cr0I9tBS.svg",
+          "alt": "Footer Gallery 2"
+        },
+        {
+          "image": "/resort001/assets/footer3-D-8vrLON.svg",
+          "alt": "Footer Gallery 3"
+        },
+        {
+          "image": "/resort001/assets/footer4-ClmPsWbl.svg",
+          "alt": "Footer Gallery 4"
+        },
+        {
+          "image": "/resort001/assets/footer1-CMc8nRKW.svg",
+          "alt": "Footer Gallery 5"
+        },
+        {
+          "image": "/resort001/assets/footer2-Cr0I9tBS.svg",
+          "alt": "Footer Gallery 6"
+        }
+      ]
+    }
+  },
+  "colors": {
+    "primary": "#4A1942"
+  },
+  "about": {
+    "title": "Crafting Unforgettable",
+    "subtitle": null,
+    "description": null,
+    "breadcrumb": {
+      "home": "Home",
+      "current": "About Us"
+    },
+    "media": {
+      "type": "image",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1920&q=80",
+        "alt": "Crafting Unforgettable",
+        "fit": "cover",
+        "focalPoint": {
+          "x": 50,
+          "y": 50
+        }
+      },
+      "video": null
+    },
+    "knowAboutUs": {
+      "title": "Know About Us",
+      "paragraphs": [
+        "Embark on an unforgettable 7-day journey through the enchanting island of Bali. From the lush rice terraces of Ubud to the pristine beaches of Seminyak, this carefully curated adventure combines cultural immersion, natural wonders, and luxurious comfort.",
+        "Stay in handpicked luxury villas, explore ancient temples with expert local guides, master traditional Balinese cooking, and unwind with authentic spa treatments. Whether you're seeking adventure, relaxation, or cultural enrichment, this package offers the perfect balance of activities and leisure time.",
+        "Our small-group tours (maximum 12 travelers) ensure personalized attention and authentic experiences. With all logistics handled—from airport transfers to entrance fees—you can focus on creating memories that will last a lifetime."
+      ],
+      "tags": [
+        {
+          "id": "about-tag-adventure-seekers",
+          "icon": "🏃",
+          "label": "Adventure Seekers"
+        },
+        {
+          "id": "about-tag-couples",
+          "icon": "👫",
+          "label": "Couples"
+        },
+        {
+          "id": "about-tag-solo-travelers",
+          "icon": "👤",
+          "label": "Solo Travelers"
+        },
+        {
+          "id": "about-tag-photography-enthusiasts",
+          "icon": "📷",
+          "label": "Photography Enthusiasts"
+        },
+        {
+          "id": "about-tag-wellness-lovers",
+          "icon": "🧘",
+          "label": "Wellness Lovers"
+        }
+      ],
+      "media": {
+        "type": "image",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80",
+          "alt": "Know About Us",
+          "fit": "cover",
+          "focalPoint": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        "video": null
+      }
+    },
+    "weProvide": {
+      "title": "We Provide",
+      "description": "Tekkzy Resort is more than a hotel—it's a carefully curated experience where contemporary art, we Provide the best",
+      "backgroundImage": {
+        "src": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=80",
+        "alt": "We Provide",
+        "fit": "cover",
+        "focalPoint": {
+          "x": 50,
+          "y": 50
+        }
+      },
+      "services": [
+        {
+          "id": "service-temple-tours",
+          "title": "Temple Tours",
+          "description": "Visit sacred temples including Tanah Lot, Uluwatu, and Besakih",
+          "icon": "⛩️",
+          "image": null,
+          "link": null
+        },
+        {
+          "id": "service-water-sports",
+          "title": "Water Sports",
+          "description": "Surfing, snorkeling, and paddleboarding at pristine beaches",
+          "icon": "🌊",
+          "image": null,
+          "link": null
+        },
+        {
+          "id": "service-cooking-class",
+          "title": "Cooking Class",
+          "description": "Master traditional Balinese recipes with local chef",
+          "icon": "🍴",
+          "image": null,
+          "link": null
+        },
+        {
+          "id": "service-spa-experience",
+          "title": "Spa Experience",
+          "description": "Authentic Balinese massage and wellness treatments",
+          "icon": "🪷",
+          "image": null,
+          "link": null
+        },
+        {
+          "id": "service-rice-terraces",
+          "title": "Rice Terraces",
+          "description": "Explore the iconic Tegallalang rice paddies",
+          "icon": "⛰️",
+          "image": null,
+          "link": null
+        },
+        {
+          "id": "service-beach-time",
+          "title": "Beach Time",
+          "description": "Relax at Seminyak's beautiful beaches",
+          "icon": "🏖️",
+          "image": null,
+          "link": null
+        }
+      ]
+    },
+    "visionaries": {
+      "title": "Meet The Visionaries",
+      "description": "The passionate individuals behind every exceptional stay",
+      "team": [
+        {
+          "id": "team-pk-mishra",
+          "name": "Pk Mishra",
+          "role": "Authentic Balinese massage and Authentic Balinese",
+          "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&q=80"
+        },
+        {
+          "id": "team-sai-swaroop",
+          "name": "Sai Swaroop",
+          "role": "Authentic Balinese massage and Authentic Balinese",
+          "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&q=80"
+        },
+        {
+          "id": "team-avishek-mishra",
+          "name": "Avishek Mishra",
+          "role": "Authentic Balinese massage and Authentic Balinese",
+          "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&q=80"
+        }
+      ]
+    }
+  }
+}

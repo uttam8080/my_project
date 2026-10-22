@@ -1,0 +1,15 @@
+HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 10157
+Connection: keep-alive
+Last-Modified: Wed, 29 Jul 2026 11:00:12 GMT
+Server: AmazonS3
+Date: Wed, 29 Jul 2026 11:01:08 GMT
+Cache-Control: no-cache, max-age=0, must-revalidate
+ETag: "9d82a91e7b56d08fba282c450918a7f7"
+X-Cache: Hit from cloudfront
+Via: 1.1 605a822c7f989962792e2d3ffdee1b7e.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: CCU50-P6
+X-Amz-Cf-Id: Vly2pDXcifRrv0R9VXWX4tnpYqgdqMbTnQSg2Qw6J6Opwlivahvjpw==
+Vary: Origin
+

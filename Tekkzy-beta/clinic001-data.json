@@ -1,0 +1,1447 @@
+{
+  "institutionId": "CLINIC001",
+  "schemaVersion": "1.0.0",
+  "template": {
+    "id": "template-eye-clinic",
+    "name": "Tekkzy Eye Institute",
+    "version": "1.0.0"
+  },
+  "site": {
+    "name": "Tekkzy Eye Institute",
+    "description": "Where art meets science in ophthalmology",
+    "locale": "en-US",
+    "favicon": null,
+    "theme": {
+      "colors": {
+        "primary": "#C9A864",
+        "primaryHover": "#b39355",
+        "dark": "#1A1A1A",
+        "bgLight": "#FAF6F0",
+        "bgCard": "#F9F7F4",
+        "accent": "#C4A86E",
+        "textDark": "#1A1A1A",
+        "textMuted": "#4A4A4A"
+      },
+      "typography": {
+        "fontHeading": "Cormorant Garamond, serif",
+        "fontBody": "Manrope, sans-serif"
+      }
+    },
+    "contact": {
+      "email": "info@clarityeyeinstitute.com",
+      "phone": "(310) 555-EYES (3937)",
+      "address": "1250 Medical Plaza Drive, Suite 400, Los Angeles, CA 90025"
+    },
+    "socialLinks": [],
+    "loadingText": "Loading...",
+    "contactMail": "info@clarityeyeinstitute.com",
+    "api": {
+      "contactEndpoint": null
+    }
+  },
+  "navigation": {
+    "id": "main-navigation",
+    "editorLabel": "Navigation",
+    "enabled": true,
+    "variant": "default",
+    "logo": {
+      "mode": "text",
+      "text": "Tekkzy Eye Institute",
+      "image": null,
+      "url": "/"
+    },
+    "items": [
+      {
+        "id": "nav-home",
+        "label": "HOME",
+        "url": "/",
+        "target": "_self",
+        "children": [],
+        "sourceType": "page"
+      },
+      {
+        "id": "nav-about",
+        "label": "ABOUT",
+        "url": "/about",
+        "target": "_self",
+        "children": [],
+        "sourceType": "page"
+      },
+      {
+        "id": "nav-services",
+        "label": "SERVICES",
+        "url": "/services",
+        "target": "_self",
+        "children": [],
+        "sourceType": "page"
+      },
+      {
+        "id": "nav-contact",
+        "label": "CONTACT",
+        "url": "/contact",
+        "target": "_self",
+        "children": [],
+        "sourceType": "page"
+      }
+    ],
+    "actions": [
+      {
+        "id": "nav-book-appointment",
+        "label": "BOOK APPOINTMENT",
+        "url": "/contact",
+        "target": "_self",
+        "style": "primary",
+        "icon": null
+      }
+    ],
+    "settings": {
+      "sticky": true,
+      "primaryColor": "#C9A864",
+      "hoverColor": "#b39355",
+      "mobileAction": {
+        "id": "nav-mobile-schedule-visit",
+        "label": "Schedule Visit",
+        "url": "/contact",
+        "target": "_self",
+        "style": "primary",
+        "icon": null
+      }
+    }
+  },
+  "pages": [
+    {
+      "id": "page-home",
+      "editorLabel": "Home Page",
+      "title": "Home",
+      "slug": "/",
+      "enabled": true,
+      "seo": {
+        "title": "Tekkzy Eye Institute",
+        "description": "Where art meets science in ophthalmology",
+        "image": {
+          "src": "https://products.tekkzy.com/clinic001/images/hero.png",
+          "alt": "Tekkzy Eye Institute",
+          "fit": "cover",
+          "focalPoint": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        "noIndex": false,
+        "video": null
+      },
+      "sections": [
+        {
+          "id": "home-hero",
+          "editorLabel": "Home · Hero",
+          "type": "hero",
+          "variant": "background-image",
+          "enabled": true,
+          "content": {
+            "title": {
+              "line1": "Visionary Care,",
+              "line2": "Exceptional Precision"
+            },
+            "description": "Where art meets science in ophthalmology",
+            "media": {
+              "type": "image",
+              "image": {
+                "src": "https://products.tekkzy.com/clinic001/images/hero.png",
+                "alt": "Tekkzy Eye Institute",
+                "fit": "cover",
+                "focalPoint": {
+                  "x": 50,
+                  "y": 50
+                }
+              },
+              "video": null
+            },
+            "actions": [
+              {
+                "id": "home-hero-schedule-consultation",
+                "label": "SCHEDULE CONSULTATION",
+                "url": "/contact",
+                "target": "_self",
+                "style": "primary",
+                "icon": null
+              }
+            ],
+            "scrollText": "SCROLL TO EXPLORE"
+          },
+          "settings": {
+            "sectionHeight": "h-[120vh] sm:h-[110vh] md:h-[120vh]",
+            "titleStyles": {
+              "fontFamily": "Cormorant Garamond",
+              "lightWeight": true,
+              "sizes": "text-[2.5rem] sm:text-[3.5rem] md:text-[5.25rem]",
+              "leading": "leading-[1.15] md:leading-[1.3]"
+            },
+            "descriptionStyles": {
+              "fontFamily": "Manrope",
+              "sizes": "text-lg sm:text-xl md:text-[24px]",
+              "leading": "leading-[32px] sm:leading-[40px] md:leading-[55px]"
+            }
+          }
+        },
+        {
+          "id": "home-excellence",
+          "editorLabel": "Home · Excellence",
+          "type": "content",
+          "variant": "text",
+          "enabled": true,
+          "content": {
+            "title": {
+              "line1": "Your Eyes Deserve",
+              "line2": "Excellence"
+            },
+            "body": [
+              {
+                "id": "home-excellence-paragraph-1",
+                "type": "paragraph",
+                "text": "At Clarity Eye Institute, we believe exceptional vision care is both an art and a science. Our commitment to excellence is reflected in every aspect of our practice, from our state-of-the-art technology to our compassionate, personalized approach. With decades of combined experience, our team of renowned"
+              },
+              {
+                "id": "home-excellence-paragraph-2",
+                "type": "paragraph",
+                "text": "ophthalmologists specializes in advanced eye care, delivering treatments that restore and enhance vision while prioritizing your comfort and well-being. We don't just treat eyes — we transform lives through the gift of clear, confident vision."
+              }
+            ],
+            "actions": []
+          },
+          "settings": {
+            "dividerColor": "#C4A86E"
+          }
+        },
+        {
+          "id": "home-expertise",
+          "editorLabel": "Home · Our Expertise",
+          "type": "feature-grid",
+          "variant": "services",
+          "enabled": true,
+          "content": {
+            "title": {
+              "line1": "Our Expertise",
+              "line2": ""
+            },
+            "items": [
+              {
+                "id": "expertise-comprehensive-eye-exams",
+                "title": "Comprehensive Eye Exams",
+                "description": "Thorough evaluations using cutting-edge diagnostic technology to assess your complete ocular health and vision needs.",
+                "icon": {
+                  "src": "https://products.tekkzy.com/clinic001/images/service-icon1.png",
+                  "alt": "Comprehensive Eye Exams",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "link": "/services"
+              },
+              {
+                "id": "expertise-lasik-vision-correction",
+                "title": "LASIK & Vision Correction",
+                "description": "Advanced laser vision correction procedures offering freedom from glasses and contact lenses with exceptional precision.",
+                "icon": {
+                  "src": "https://products.tekkzy.com/clinic001/images/service-icon2.png",
+                  "alt": "LASIK & Vision Correction",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "link": "/services"
+              },
+              {
+                "id": "expertise-cataract-surgery",
+                "title": "Cataract Surgery",
+                "description": "Bladeless, premium lens implant surgery restoring clarity and reducing dependence on corrective eyewear.",
+                "icon": {
+                  "src": "https://products.tekkzy.com/clinic001/images/service-icon3.png",
+                  "alt": "Cataract Surgery",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "link": "/services"
+              },
+              {
+                "id": "expertise-retina-care",
+                "title": "Retina Care",
+                "description": "Expert diagnosis and treatment of retinal conditions including macular degeneration, diabetic retinopathy, and detachment.",
+                "icon": {
+                  "src": "https://products.tekkzy.com/clinic001/images/service-icon4.png",
+                  "alt": "Retina Care",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "link": "/services"
+              },
+              {
+                "id": "expertise-glaucoma-management",
+                "title": "Glaucoma Management",
+                "description": "Comprehensive screening, monitoring, and treatment to preserve vision and prevent progression of this silent disease.",
+                "icon": {
+                  "src": "https://products.tekkzy.com/clinic001/images/service-icon5.png",
+                  "alt": "Glaucoma Management",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "link": "/services"
+              },
+              {
+                "id": "expertise-pediatric-ophthalmology",
+                "title": "Pediatric Ophthalmology",
+                "description": "Specialized care for children's developing vision, treating conditions from amblyopia to strabismus with gentle expertise.",
+                "icon": {
+                  "src": "https://products.tekkzy.com/clinic001/images/service-icon6.png",
+                  "alt": "Pediatric Ophthalmology",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "link": "/services"
+              }
+            ],
+            "actions": []
+          },
+          "settings": {}
+        },
+        {
+          "id": "home-featured-lasik",
+          "editorLabel": "Home · Featured LASIK",
+          "type": "content",
+          "variant": "image-left",
+          "enabled": true,
+          "content": {
+            "eyebrow": "FEATURED TREATMENT",
+            "title": {
+              "line1": "LASIK: The Gold Standard in",
+              "line2": "Vision Correction"
+            },
+            "description": "Experience life in high definition with our advanced bladeless LASIK technology. Our surgeons use the most sophisticated wavefront-guided laser systems to create a personalized treatment plan unique to your eyes.",
+            "media": {
+              "type": "image",
+              "image": {
+                "src": "https://products.tekkzy.com/clinic001/images/lasiksection.png",
+                "alt": "LASIK: The Gold Standard in Vision Correction",
+                "fit": "cover",
+                "focalPoint": {
+                  "x": 50,
+                  "y": 50
+                }
+              },
+              "video": null
+            },
+            "features": [
+              "Bladeless, all-laser procedure",
+              "Customized to your unique eye anatomy",
+              "Quick recovery with minimal discomfort",
+              "Over 96% achieve 20/20 vision or better",
+              "Lifetime enhancement guarantee"
+            ],
+            "actions": [
+              {
+                "id": "home-lasik-learn-more",
+                "label": "LEARN MORE",
+                "url": "/services",
+                "target": "_self",
+                "style": "primary",
+                "icon": null
+              }
+            ]
+          },
+          "settings": {}
+        },
+        {
+          "id": "home-specialists",
+          "editorLabel": "Home · Specialists",
+          "type": "team",
+          "variant": "grid",
+          "enabled": true,
+          "content": {
+            "title": {
+              "line1": "Meet Our Specialists",
+              "line2": ""
+            },
+            "items": [
+              {
+                "id": "specialist-michael-chen",
+                "name": "Dr. Michael Chen",
+                "degrees": "MD, FACS",
+                "role": "Cornea & Refractive Surgery",
+                "description": "Fellowship-trained with over 15 years specializing in LASIK and complex corneal procedures. Published researcher in vision correction.",
+                "media": {
+                  "type": "image",
+                  "image": {
+                    "src": "https://products.tekkzy.com/clinic001/images/img1.png",
+                    "alt": "Dr. Michael Chen",
+                    "fit": "cover",
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  "video": null
+                }
+              },
+              {
+                "id": "specialist-sarah-martinez",
+                "name": "Dr. Sarah Martinez",
+                "degrees": "MD, PhD",
+                "role": "Retina & Vitreous",
+                "description": "Internationally recognized retinal surgeon with expertise in macular disease and diabetic eye care. Harvard Medical School graduate.",
+                "media": {
+                  "type": "image",
+                  "image": {
+                    "src": "https://products.tekkzy.com/clinic001/images/img2.png",
+                    "alt": "Dr. Sarah Martinez",
+                    "fit": "cover",
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  "video": null
+                }
+              },
+              {
+                "id": "specialist-james-williams",
+                "name": "Dr. James Williams",
+                "degrees": "MD, FACS",
+                "role": "Cataract & Anterior Segment",
+                "description": "Pioneer in premium lens technology with over 20,000 successful cataract surgeries. Recognized leader in bladeless techniques.",
+                "media": {
+                  "type": "image",
+                  "image": {
+                    "src": "https://products.tekkzy.com/clinic001/images/img3.png",
+                    "alt": "Dr. James Williams",
+                    "fit": "cover",
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  "video": null
+                }
+              },
+              {
+                "id": "specialist-emily-thompson",
+                "name": "Dr. Emily Thompson",
+                "degrees": "MD, FAAP",
+                "role": "Pediatric Ophthalmology",
+                "description": "Devoted to children's vision with specialized training in pediatric strabismus and amblyopia. Known for gentle, child-friendly approach.",
+                "media": {
+                  "type": "image",
+                  "image": {
+                    "src": "https://products.tekkzy.com/clinic001/images/img4.png",
+                    "alt": "Dr. Emily Thompson",
+                    "fit": "cover",
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  "video": null
+                }
+              }
+            ]
+          },
+          "settings": {}
+        },
+        {
+          "id": "home-stats",
+          "editorLabel": "Home · Statistics",
+          "type": "stats",
+          "variant": "row",
+          "enabled": true,
+          "content": {
+            "items": [
+              {
+                "id": "home-stat-successful-procedures",
+                "value": "25,000+",
+                "label": "SUCCESSFUL PROCEDURES"
+              },
+              {
+                "id": "home-stat-patient-satisfaction",
+                "value": "98%",
+                "label": "PATIENT SATISFACTION"
+              },
+              {
+                "id": "home-stat-years-of-excellence",
+                "value": "30+",
+                "label": "YEARS OF EXCELLENCE"
+              },
+              {
+                "id": "home-stat-expert-specialists",
+                "value": "15",
+                "label": "EXPERT SPECIALISTS"
+              }
+            ]
+          },
+          "settings": {}
+        },
+        {
+          "id": "home-testimonials",
+          "editorLabel": "Home · Testimonials",
+          "type": "testimonials",
+          "variant": "carousel",
+          "enabled": true,
+          "content": {
+            "items": [
+              {
+                "id": "testimonial-jennifer-anderson",
+                "quote": "“After years of struggling with glasses, LASIK at Clarity changed my life. The precision, care, and results exceeded every expectation. I can't imagine trusting my eyes to anyone else.”",
+                "author": {
+                  "name": "Jennifer Anderson",
+                  "role": "LASIK Patient, 2023",
+                  "company": null,
+                  "image": null
+                }
+              },
+              {
+                "id": "testimonial-michael-turner",
+                "quote": "“After years of struggling with glasses, LASIK at Clarity changed my life. The precision, care, and results exceeded every expectation. I can't imagine trusting my eyes to anyone else.”",
+                "author": {
+                  "name": "Michael Turner",
+                  "role": "LASIK Patient, 2024",
+                  "company": null,
+                  "image": null
+                }
+              },
+              {
+                "id": "testimonial-sophia-williams",
+                "quote": "“After years of struggling with glasses, LASIK at Clarity changed my life. The precision, care, and results exceeded every expectation. I can't imagine trusting my eyes to anyone else.”",
+                "author": {
+                  "name": "Sophia Williams",
+                  "role": "LASIK Patient, 2022",
+                  "company": null,
+                  "image": null
+                }
+              }
+            ]
+          },
+          "settings": {
+            "autoPlay": true,
+            "intervalMs": 5000
+          }
+        },
+        {
+          "id": "home-technology",
+          "editorLabel": "Home · Technology",
+          "type": "content-list",
+          "variant": "alternating-media",
+          "enabled": true,
+          "content": {
+            "title": {
+              "line1": "Technology We Use",
+              "line2": ""
+            },
+            "items": [
+              {
+                "id": "technology-wavefront-guided-lasik",
+                "title": "Wavefront-Guided LASIK System",
+                "description": "Our state-of-the-art laser platform provides unparalleled precision, mapping over 1,200 unique points on your cornea to create a truly personalized treatment. This technology allows us to correct not just standard refractive errors, but also higher-order aberrations for superior visual quality and night vision.",
+                "media": {
+                  "type": "image",
+                  "image": {
+                    "src": "https://products.tekkzy.com/clinic001/images/tech1.png",
+                    "alt": "Wavefront-Guided LASIK System",
+                    "fit": "cover",
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  "video": null
+                },
+                "reverse": false
+              },
+              {
+                "id": "technology-optical-coherence-tomography",
+                "title": "Optical Coherence Tomography (OCT)",
+                "description": "This revolutionary imaging technology provides cross-sectional views of the retina with microscopic detail, allowing early detection of conditions like macular degeneration and glaucoma years before symptoms appear. Our OCT system captures images 10 times faster than traditional methods, ensuring accuracy and comfort.",
+                "media": {
+                  "type": "image",
+                  "image": {
+                    "src": "https://products.tekkzy.com/clinic001/images/tech2.png",
+                    "alt": "Optical Coherence Tomography (OCT)",
+                    "fit": "cover",
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  "video": null
+                },
+                "reverse": true
+              },
+              {
+                "id": "technology-femtosecond-laser-cataract-surgery",
+                "title": "Femtosecond Laser Cataract Surgery",
+                "description": "We utilize the most advanced bladeless cataract removal technology available. This computer-guided laser performs the most delicate steps of cataract surgery with extraordinary precision, resulting in faster healing, better visual outcomes, and reduced risk of complications compared to traditional methods.",
+                "media": {
+                  "type": "image",
+                  "image": {
+                    "src": "https://products.tekkzy.com/clinic001/images/tech3.png",
+                    "alt": "Femtosecond Laser Cataract Surgery",
+                    "fit": "cover",
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  "video": null
+                },
+                "reverse": false
+              }
+            ]
+          },
+          "settings": {}
+        }
+      ]
+    },
+    {
+      "id": "page-about",
+      "editorLabel": "About Page",
+      "title": "Our Story",
+      "slug": "/about",
+      "enabled": true,
+      "seo": {
+        "title": "Our Story",
+        "description": "To preserve, restore, and enhance vision through innovative treatments, compassionate care, and an unwavering commitment to excellence in every patient interaction.",
+        "image": {
+          "src": "https://products.tekkzy.com/clinic001/images/Vector.png",
+          "alt": "Our Story",
+          "fit": "cover",
+          "focalPoint": {
+            "x": 50,
+            "y": 50
+          }
+        },
+        "noIndex": false,
+        "video": null
+      },
+      "sections": [
+        {
+          "id": "about-hero",
+          "editorLabel": "About · Hero",
+          "type": "hero",
+          "variant": "page-header",
+          "enabled": true,
+          "content": {
+            "title": {
+              "line1": "Our Story",
+              "line2": ""
+            },
+            "breadcrumb": "HOME • ABOUT",
+            "media": {
+              "type": "image",
+              "image": {
+                "src": "https://products.tekkzy.com/clinic001/images/Vector.png",
+                "alt": "Our Story",
+                "fit": "cover",
+                "focalPoint": {
+                  "x": 50,
+                  "y": 50
+                }
+              },
+              "video": null
+            },
+            "actions": []
+          },
+          "settings": {}
+        },
+        {
+          "id": "about-mission",
+          "editorLabel": "About · Mission",
+          "type": "feature-grid",
+          "variant": "values",
+          "enabled": true,
+          "content": {
+            "title": {
+              "line1": "Our Mission",
+              "line2": ""
+            },
+            "description": "To preserve, restore, and enhance vision through innovative treatments, compassionate care, and an unwavering commitment to excellence in every patient interaction.",
+            "items": [
+              {
+                "id": "value-precision",
+                "title": "Precision",
+                "description": "Meticulous attention to detail in every diagnosis, treatment plan, and surgical procedure ensures optimal outcomes.",
+                "icon": {
+                  "src": "https://products.tekkzy.com/clinic001/images/value-icon1.png",
+                  "alt": "Precision",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                }
+              },
+              {
+                "id": "value-compassion",
+                "title": "Compassion",
+                "description": "We treat every patient as family, understanding the trust you place in us with your precious gift of sight.",
+                "icon": {
+                  "src": "https://products.tekkzy.com/clinic001/images/value-icon2.png",
+                  "alt": "Compassion",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                }
+              },
+              {
+                "id": "value-innovation",
+                "title": "Innovation",
+                "description": "Continuous investment in the latest technology and techniques keeps us at the forefront of ophthalmic care.",
+                "icon": {
+                  "src": "https://products.tekkzy.com/clinic001/images/value-icon3.png",
+                  "alt": "Innovation",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                }
+              }
+            ],
+            "actions": []
+          },
+          "settings": {}
+        },
+        {
+          "id": "about-leadership",
+          "editorLabel": "About · Leadership",
+          "type": "team",
+          "variant": "leadership-grid",
+          "enabled": true,
+          "content": {
+            "title": {
+              "line1": "Our Leadership",
+              "line2": ""
+            },
+            "items": [
+              {
+                "id": "leader-michael-chen",
+                "name": "Dr. Michael Chen",
+                "role": "Founder & CEO",
+                "description": "Visionary leader with 30 years of experience in ophthalmology. Board-certified specialist who pioneered numerous techniques in refractive surgery and continues to drive innovation.",
+                "media": {
+                  "type": "image",
+                  "image": {
+                    "src": "https://products.tekkzy.com/clinic001/images/leader3.png",
+                    "alt": "Dr. Michael Chen",
+                    "fit": "cover",
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  "video": null
+                }
+              },
+              {
+                "id": "leader-sarah-martinez",
+                "name": "Dr. Sarah Martinez",
+                "role": "Chief Medical Officer",
+                "description": "Internationally recognized retina specialist overseeing clinical excellence and research initiatives. Published author with expertise in advanced surgical techniques.",
+                "media": {
+                  "type": "image",
+                  "image": {
+                    "src": "https://products.tekkzy.com/clinic001/images/leader4.png",
+                    "alt": "Dr. Sarah Martinez",
+                    "fit": "cover",
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  "video": null
+                }
+              },
+              {
+                "id": "leader-elizabeth-thompson",
+                "name": "Elizabeth Thompson",
+                "role": "Chief Operating Officer",
+                "description": "Healthcare administration expert ensuring seamless operations and exceptional patient experiences. 20 years of leadership in premium medical facilities.",
+                "media": {
+                  "type": "image",
+                  "image": {
+                    "src": "https://products.tekkzy.com/clinic001/images/leader1.png",
+                    "alt": "Elizabeth Thompson",
+                    "fit": "cover",
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  "video": null
+                }
+              },
+              {
+                "id": "leader-james-williams",
+                "name": "Dr. James Williams",
+                "role": "Director of Research",
+                "description": "Leading clinical trials and innovation initiatives. Published extensively on advanced lens technology and serves on national ophthalmology advisory boards.",
+                "media": {
+                  "type": "image",
+                  "image": {
+                    "src": "https://products.tekkzy.com/clinic001/images/leader2.png",
+                    "alt": "Dr. James Williams",
+                    "fit": "cover",
+                    "focalPoint": {
+                      "x": 50,
+                      "y": 50
+                    }
+                  },
+                  "video": null
+                }
+              }
+            ]
+          },
+          "settings": {}
+        },
+        {
+          "id": "about-stats",
+          "editorLabel": "About · Statistics",
+          "type": "stats",
+          "variant": "row",
+          "enabled": true,
+          "content": {
+            "items": [
+              {
+                "id": "about-stat-years-experience",
+                "value": "30",
+                "label": "Years Experience"
+              },
+              {
+                "id": "about-stat-expert-specialists",
+                "value": "15",
+                "label": "Expert Specialists"
+              },
+              {
+                "id": "about-stat-procedures",
+                "value": "25,000+",
+                "label": "Procedures"
+              },
+              {
+                "id": "about-stat-satisfaction",
+                "value": "98%",
+                "label": "Satisfaction"
+              }
+            ]
+          },
+          "settings": {}
+        },
+        {
+          "id": "about-cta",
+          "editorLabel": "About · Call to Action",
+          "type": "cta",
+          "variant": "banner",
+          "enabled": true,
+          "content": {
+            "title": {
+              "line1": "Experience the Clarity Difference",
+              "line2": ""
+            },
+            "subtitle": "Schedule your consultation today",
+            "actions": [
+              {
+                "id": "about-book-appointment",
+                "label": "Book Appointment",
+                "url": "/contact",
+                "target": "_self",
+                "style": "primary",
+                "icon": null
+              }
+            ]
+          },
+          "settings": {}
+        }
+      ]
+    },
+    {
+      "id": "page-services",
+      "editorLabel": "Services Page",
+      "title": "Our Eye Care Services",
+      "slug": "/services",
+      "enabled": true,
+      "seo": {
+        "title": "Our Eye Care Services",
+        "description": "Comprehensive ophthalmic services delivered with precision, care, and advanced medical technology.",
+        "image": null,
+        "noIndex": false
+      },
+      "sections": [
+        {
+          "id": "services-header",
+          "editorLabel": "Services · Header",
+          "type": "hero",
+          "variant": "page-header",
+          "enabled": true,
+          "content": {
+            "title": {
+              "line1": "Our Eye Care Services",
+              "line2": ""
+            },
+            "subtitle": "Comprehensive ophthalmic services delivered with precision, care, and advanced medical technology.",
+            "actions": []
+          },
+          "settings": {}
+        },
+        {
+          "id": "services-list",
+          "editorLabel": "Services · List",
+          "type": "feature-grid",
+          "variant": "service-details",
+          "enabled": true,
+          "content": {
+            "items": [
+              {
+                "id": "service-comprehensive-eye-examination",
+                "title": "Comprehensive Eye Examination",
+                "description": "A complete evaluation of your vision and eye health to detect issues at an early stage.",
+                "icon": {
+                  "src": "https://products.tekkzy.com/clinic001/images/service-icon1.png",
+                  "alt": "Comprehensive Eye Examination",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "features": [
+                  "Visual acuity testing",
+                  "Eye pressure measurement",
+                  "Retinal examination",
+                  "Prescription assessment"
+                ],
+                "link": "/contact"
+              },
+              {
+                "id": "service-lasik-refractive-surgery",
+                "title": "LASIK & Refractive Surgery",
+                "description": "Advanced laser procedures to correct vision and reduce dependency on glasses or contact lenses.",
+                "icon": {
+                  "src": "https://products.tekkzy.com/clinic001/images/service-icon2.png",
+                  "alt": "LASIK & Refractive Surgery",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "features": [
+                  "Blade-free LASIK",
+                  "SMILE procedure",
+                  "Pre-surgical evaluation",
+                  "Post-operative care"
+                ],
+                "link": "/contact"
+              },
+              {
+                "id": "service-cataract-surgery",
+                "title": "Cataract Surgery",
+                "description": "Safe and effective cataract treatment using modern surgical techniques and premium lenses.",
+                "icon": {
+                  "src": "https://products.tekkzy.com/clinic001/images/service-icon3.png",
+                  "alt": "Cataract Surgery",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "features": [
+                  "Phacoemulsification",
+                  "Premium intraocular lenses",
+                  "Quick recovery",
+                  "Experienced surgeons"
+                ],
+                "link": "/contact"
+              },
+              {
+                "id": "service-retina-services",
+                "title": "Retina Services",
+                "description": "Diagnosis and treatment of retinal disorders using advanced imaging and laser technology.",
+                "icon": {
+                  "src": "https://products.tekkzy.com/clinic001/images/service-icon4.png",
+                  "alt": "Retina Services",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "features": [
+                  "Diabetic retinopathy care",
+                  "Macular degeneration treatment",
+                  "Retinal laser procedures",
+                  "OCT imaging"
+                ],
+                "link": "/contact"
+              },
+              {
+                "id": "service-pediatric-eye-care",
+                "title": "Pediatric Eye Care",
+                "description": "Specialized eye care services tailored for infants, children, and adolescents.",
+                "icon": {
+                  "src": "https://products.tekkzy.com/clinic001/images/service-icon6.png",
+                  "alt": "Pediatric Eye Care",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "features": [
+                  "Vision screening",
+                  "Lazy eye treatment",
+                  "Squint evaluation",
+                  "Child-friendly approach"
+                ],
+                "link": "/contact"
+              },
+              {
+                "id": "service-glaucoma-management",
+                "title": "Glaucoma Management",
+                "description": "Early detection and long-term management of glaucoma to protect your vision.",
+                "icon": {
+                  "src": "https://products.tekkzy.com/clinic001/images/service-icon5.png",
+                  "alt": "Glaucoma Management",
+                  "fit": "cover",
+                  "focalPoint": {
+                    "x": 50,
+                    "y": 50
+                  }
+                },
+                "features": [
+                  "Eye pressure monitoring",
+                  "Optic nerve analysis",
+                  "Medical & laser treatment",
+                  "Regular follow-ups"
+                ],
+                "link": "/contact"
+              }
+            ],
+            "actions": []
+          },
+          "settings": {}
+        },
+        {
+          "id": "services-cta",
+          "editorLabel": "Services · Call to Action",
+          "type": "cta",
+          "variant": "banner",
+          "enabled": true,
+          "content": {
+            "title": {
+              "line1": "Need Expert Eye Care?",
+              "line2": ""
+            },
+            "subtitle": "Schedule a consultation with our specialists and take the first step towards better vision.",
+            "actions": [
+              {
+                "id": "services-book-appointment",
+                "label": "Book an Appointment",
+                "url": "/contact",
+                "target": "_self",
+                "style": "primary",
+                "icon": null
+              }
+            ]
+          },
+          "settings": {}
+        }
+      ]
+    },
+    {
+      "id": "page-contact",
+      "editorLabel": "Contact Page",
+      "title": "Contact",
+      "slug": "/contact",
+      "enabled": true,
+      "seo": {
+        "title": "Get in Touch",
+        "description": null,
+        "image": null,
+        "noIndex": false
+      },
+      "sections": [
+        {
+          "id": "contact-form",
+          "editorLabel": "Contact · Form",
+          "type": "form",
+          "variant": "contact",
+          "enabled": true,
+          "content": {
+            "title": {
+              "line1": "Get in Touch",
+              "line2": ""
+            },
+            "fields": [
+              {
+                "id": "contact-full-name",
+                "name": "full-name",
+                "label": "Full Name",
+                "type": "text",
+                "placeholder": "",
+                "required": false,
+                "options": []
+              },
+              {
+                "id": "contact-email-address",
+                "name": "email-address",
+                "label": "Email Address",
+                "type": "email",
+                "placeholder": "",
+                "required": false,
+                "options": []
+              },
+              {
+                "id": "contact-phone-number",
+                "name": "phone-number",
+                "label": "Phone Number",
+                "type": "tel",
+                "placeholder": "",
+                "required": false,
+                "options": []
+              },
+              {
+                "id": "contact-message",
+                "name": "message",
+                "label": "Message",
+                "type": "textarea",
+                "placeholder": "",
+                "required": false,
+                "options": []
+              }
+            ],
+            "actions": [
+              {
+                "id": "contact-submit",
+                "label": "Send Message",
+                "url": "#",
+                "target": "_self",
+                "style": "primary"
+              }
+            ]
+          },
+          "settings": {}
+        },
+        {
+          "id": "contact-visit",
+          "editorLabel": "Contact · Visit",
+          "type": "contact-details",
+          "variant": "list",
+          "enabled": true,
+          "content": {
+            "title": {
+              "line1": "Visit Our Clinic",
+              "line2": ""
+            },
+            "items": [
+              {
+                "id": "contact-detail-address",
+                "label": "Address",
+                "lines": [
+                  "1250 Medical Plaza Drive",
+                  "Suite 400",
+                  "Los Angeles, CA 90025"
+                ]
+              },
+              {
+                "id": "contact-detail-hours",
+                "label": "Hours",
+                "lines": [
+                  "Monday – Friday: 8:00 AM – 6:00 PM",
+                  "Saturday: 9:00 AM – 2:00 PM",
+                  "Sunday: Closed"
+                ]
+              },
+              {
+                "id": "contact-detail-phone",
+                "label": "Phone",
+                "lines": [
+                  "(310) 555-EYES (3937)"
+                ]
+              },
+              {
+                "id": "contact-detail-email",
+                "label": "Email",
+                "lines": [
+                  "info@clarityeyeinstitute.com"
+                ]
+              }
+            ]
+          },
+          "settings": {}
+        },
+        {
+          "id": "contact-cta",
+          "editorLabel": "Contact · Call to Action",
+          "type": "cta",
+          "variant": "banner",
+          "enabled": true,
+          "content": {
+            "title": {
+              "line1": "Begin Your Vision Journey",
+              "line2": ""
+            },
+            "actions": [
+              {
+                "id": "contact-schedule-consultation",
+                "label": "Schedule Consultation",
+                "url": "/contact",
+                "target": "_self",
+                "style": "primary",
+                "icon": null
+              }
+            ]
+          },
+          "settings": {}
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "id": "main-footer",
+    "editorLabel": "Footer",
+    "enabled": true,
+    "variant": "columns",
+    "branding": {
+      "name": "TEKKZY EYE INSTITUTE",
+      "description": "Dedicated to preserving and enhancing vision through advanced medical and surgical eye care. Our commitment to excellence, innovation, and compassionate patient care has made us a trusted leader in ophthalmology."
+    },
+    "logo": {
+      "mode": "text",
+      "text": "TEKKZY EYE INSTITUTE",
+      "image": null,
+      "url": "/"
+    },
+    "description": "Dedicated to preserving and enhancing vision through advanced medical and surgical eye care. Our commitment to excellence, innovation, and compassionate patient care has made us a trusted leader in ophthalmology.",
+    "contact": {
+      "phone": "(310) 555-EYES (3937)",
+      "email": "info@clarityeyeinstitute.com",
+      "address": "1250 Medical Plaza Drive, Suite 400, Los Angeles, CA 90025"
+    },
+    "columns": [
+      {
+        "id": "footer-col-quick-links",
+        "title": "QUICK LINKS",
+        "links": [
+          {
+            "id": "footer-col-quick-links-link-1",
+            "label": "About Us",
+            "url": "/about",
+            "target": "_self"
+          },
+          {
+            "id": "footer-col-quick-links-link-2",
+            "label": "Our Services",
+            "url": "/services",
+            "target": "_self"
+          },
+          {
+            "id": "footer-col-quick-links-link-3",
+            "label": "Our Doctors",
+            "url": "/doctors",
+            "target": "_self"
+          },
+          {
+            "id": "footer-col-quick-links-link-4",
+            "label": "Technology",
+            "url": "/technology",
+            "target": "_self"
+          },
+          {
+            "id": "footer-col-quick-links-link-5",
+            "label": "Contact",
+            "url": "/contact",
+            "target": "_self"
+          },
+          {
+            "id": "footer-col-quick-links-link-6",
+            "label": "Patient Portal",
+            "url": "/contact",
+            "target": "_self"
+          }
+        ]
+      },
+      {
+        "id": "footer-col-services",
+        "title": "SERVICES",
+        "links": [
+          {
+            "id": "footer-col-services-link-1",
+            "label": "LASIK Surgery",
+            "url": "/services",
+            "target": "_self"
+          },
+          {
+            "id": "footer-col-services-link-2",
+            "label": "Cataract Surgery",
+            "url": "/services",
+            "target": "_self"
+          },
+          {
+            "id": "footer-col-services-link-3",
+            "label": "Retina Care",
+            "url": "/services",
+            "target": "_self"
+          },
+          {
+            "id": "footer-col-services-link-4",
+            "label": "Glaucoma Treatment",
+            "url": "/services",
+            "target": "_self"
+          },
+          {
+            "id": "footer-col-services-link-5",
+            "label": "Pediatric Eye Care",
+            "url": "/services",
+            "target": "_self"
+          },
+          {
+            "id": "footer-col-services-link-6",
+            "label": "Emergency Care",
+            "url": "/contact",
+            "target": "_self"
+          }
+        ]
+      },
+      {
+        "id": "footer-col-resources",
+        "title": "RESOURCES",
+        "links": [
+          {
+            "id": "footer-col-resources-link-1",
+            "label": "Patient Resources",
+            "url": "/contact",
+            "target": "_self"
+          },
+          {
+            "id": "footer-col-resources-link-2",
+            "label": "Insurance & Billing",
+            "url": "/contact",
+            "target": "_self"
+          },
+          {
+            "id": "footer-col-resources-link-3",
+            "label": "FAQs",
+            "url": "/contact",
+            "target": "_self"
+          },
+          {
+            "id": "footer-col-resources-link-4",
+            "label": "Blog & News",
+            "url": "/",
+            "target": "_self"
+          },
+          {
+            "id": "footer-col-resources-link-5",
+            "label": "Careers",
+            "url": "/contact",
+            "target": "_self"
+          },
+          {
+            "id": "footer-col-resources-link-6",
+            "label": "Research",
+            "url": "/about",
+            "target": "_self"
+          }
+        ]
+      }
+    ],
+    "socialLinks": [
+      {
+        "id": "footer-social-facebook",
+        "platform": "facebook",
+        "label": "Facebook",
+        "url": "https://facebook.com",
+        "target": "_blank"
+      },
+      {
+        "id": "footer-social-instagram",
+        "platform": "instagram",
+        "label": "Instagram",
+        "url": "https://instagram.com",
+        "target": "_blank"
+      },
+      {
+        "id": "footer-social-twitter",
+        "platform": "twitter",
+        "label": "Twitter",
+        "url": "https://twitter.com",
+        "target": "_blank"
+      },
+      {
+        "id": "footer-social-linkedin",
+        "platform": "linkedin",
+        "label": "LinkedIn",
+        "url": "https://linkedin.com",
+        "target": "_blank"
+      }
+    ],
+    "legalLinks": [
+      {
+        "id": "footer-legal-1",
+        "label": "Privacy Policy",
+        "url": "/privacy",
+        "target": "_self"
+      },
+      {
+        "id": "footer-legal-2",
+        "label": "Terms of Service",
+        "url": "/terms",
+        "target": "_self"
+      },
+      {
+        "id": "footer-legal-3",
+        "label": "Accessibility",
+        "url": "/accessibility",
+        "target": "_self"
+      }
+    ],
+    "bottomLinks": [
+      {
+        "id": "footer-bottom-1",
+        "label": "Privacy Policy",
+        "url": "/privacy",
+        "target": "_self"
+      },
+      {
+        "id": "footer-bottom-2",
+        "label": "Terms of Service",
+        "url": "/terms",
+        "target": "_self"
+      },
+      {
+        "id": "footer-bottom-3",
+        "label": "Accessibility",
+        "url": "/accessibility",
+        "target": "_self"
+      }
+    ],
+    "copyright": "© 2025 Tekkzy Eye Institute. All rights reserved.",
+    "newsletter": null,
+    "settings": {
+      "theme": "dark"
+    }
+  }
+}

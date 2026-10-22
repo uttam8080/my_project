@@ -1,0 +1,11 @@
+# Env lives in committed .env.beta / .env.production — not in the workflow.
+
+# --- Beta ---
+npm run build:beta
+aws s3 sync ./dist s3://beta.tekkzy.com --delete --exact-timestamps
+aws cloudfront create-invalidation --distribution-id E36BLI83214IY6 --paths "/*"
+
+# --- Prod ---
+npm run build:prod
+aws s3 sync ./dist s3://tekkzy.com --delete --exact-timestamps
+aws cloudfront create-invalidation --distribution-id E21YVACM73J5DF --paths "/*"
